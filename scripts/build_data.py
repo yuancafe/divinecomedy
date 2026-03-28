@@ -14,13 +14,11 @@ import textwrap
 import time
 import urllib.parse
 import urllib.request
-import warnings
 import zipfile
 from collections import Counter, defaultdict
 from xml.etree import ElementTree as ET
 from pathlib import Path
 from typing import Any
-from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = ROOT / "public"
@@ -1516,8 +1514,7 @@ def copy_illustrations() -> list[dict[str, Any]]:
         target_path = PUBLIC_MEDIA_DIR / target_name
         if spec["source"].resolve() != target_path.resolve():
             shutil.copy2(spec["source"], target_path)
-        with Image.open(target_path) as image:
-            width, height = image.size
+        width, height = image_size(target_path)
         illustrations.append(
             {
                 "id": spec["id"],
@@ -1571,6 +1568,53 @@ def fetch_remote_bytes(url: str) -> bytes:
     raise last_error or RuntimeError(f"Failed to fetch {url}")
 
 
+def image_size(path: Path) -> tuple[int, int]:
+    with path.open("rb") as handle:
+        data = handle.read()
+    return image_size_from_bytes(data)
+
+
+def image_size_from_bytes(data: bytes) -> tuple[int, int]:
+    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data.startswith(b"\xff\xd8"):
+        index = 2
+        while index + 1 < len(data):
+            if data[index] != 0xFF:
+                index += 1
+                continue
+            marker = data[index + 1]
+            index += 2
+            if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}:
+                length = int.from_bytes(data[index : index + 2], "big")
+                if index + 5 >= len(data):
+                    break
+                height = int.from_bytes(data[index + 3 : index + 5], "big")
+                width = int.from_bytes(data[index + 5 : index + 7], "big")
+                return width, height
+            if index + 2 > len(data):
+                break
+            length = int.from_bytes(data[index : index + 2], "big")
+            index += length
+        raise RuntimeError("Unsupported JPEG structure")
+    if data.startswith(b"RIFF") and data[8:12] == b"WEBP" and len(data) >= 30:
+        chunk = data[12:16]
+        if chunk == b"VP8X" and len(data) >= 30:
+            width = 1 + int.from_bytes(data[24:27], "little")
+            height = 1 + int.from_bytes(data[27:30], "little")
+            return width, height
+        if chunk == b"VP8 " and len(data) >= 30:
+            width = int.from_bytes(data[26:28], "little") & 0x3FFF
+            height = int.from_bytes(data[28:30], "little") & 0x3FFF
+            return width, height
+        if chunk == b"VP8L" and len(data) >= 25:
+            bits = int.from_bytes(data[21:25], "little")
+            width = (bits & 0x3FFF) + 1
+            height = ((bits >> 14) & 0x3FFF) + 1
+            return width, height
+    raise RuntimeError(f"Unsupported image format for size detection: {path}")
+
+
 def resolve_core_graph_image_spec(entity_id: str) -> tuple[str, str]:
     spec = CORE_GRAPH_IMAGE_SPECS[entity_id]
     if spec.get("url"):
@@ -1584,15 +1628,7 @@ def resolve_core_graph_image_spec(entity_id: str) -> tuple[str, str]:
 
 
 def save_remote_image_to_square(source_url: str, target_path: Path) -> None:
-    with Image.open(BytesIO(fetch_remote_bytes(source_url))) as image:
-        image = image.convert("RGB")
-        width, height = image.size
-        side = max(width, height)
-        canvas = Image.new("RGB", (side, side), (244, 236, 220))
-        x = (side - width) // 2
-        y = (side - height) // 2
-        canvas.paste(image, (x, y))
-        canvas.resize((720, 720), Image.Resampling.LANCZOS).save(target_path, quality=92)
+    target_path.write_bytes(fetch_remote_bytes(source_url))
 
 
 GRAPH_FALLBACK_SOURCES: dict[str, list[str]] = {
@@ -1613,28 +1649,8 @@ def illustration_path_from_src(src: str) -> Path:
 
 
 def crop_square_image(source_path: Path, target_path: Path, seed: str) -> None:
-    digest = hashlib.sha1(seed.encode("utf-8")).digest()
-    with Image.open(source_path) as image:
-        image = image.convert("RGB")
-        width, height = image.size
-        side = min(width, height)
-        if width == side:
-            max_left = 0
-            max_top = height - side
-            left = 0
-            top = int(max_top * (digest[0] / 255))
-        elif height == side:
-            max_left = width - side
-            max_top = 0
-            left = int(max_left * (digest[0] / 255))
-            top = 0
-        else:
-            max_left = width - side
-            max_top = height - side
-            left = int(max_left * (digest[0] / 255))
-            top = int(max_top * (digest[1] / 255))
-        cropped = image.crop((left, top, left + side, top + side)).resize((512, 512), Image.Resampling.LANCZOS)
-        cropped.save(target_path, quality=92)
+    if not target_path.exists():
+        shutil.copy2(source_path, target_path)
 
 
 def build_core_graph_illustrations(
