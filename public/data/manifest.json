@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "works": 6,
+    "cantos": 100,
+    "entities": 1060,
+    "graphNodes": 1060,
+    "graphEdges": 931
+  },
+  "hero": {
+    "title": "但丁《神曲》数字阅读",
+    "subtitle": "《神曲》地图、整歌对读与知识图谱 | Digital Dante Museum",
+    "quote": "Nel mezzo del cammin di nostra vita"
+  },
+  "defaultReaderColumns": [
+    "it_pg1012:text",
+    "en_pg8800:text",
+    "zh_wang:text",
+    "zh_wang:notes"
+  ],
+  "defaultReaderColumnCount": 4
+}

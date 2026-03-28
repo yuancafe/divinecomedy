@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="但丁三界标志">
+  <rect width="192" height="192" rx="36" fill="#0f0b08"/>
+  <path d="M34 148V54c0-10 8-18 18-18h22c17 0 30 13 30 30 0 11.6-6.6 21.7-16.4 26.8C100.7 97 110 108.6 110 123c0 19.3-15.7 35-35.1 35H34Z" fill="#eadab4"/>
+  <path d="M60 56h12.5c8.5 0 15.4 6.7 15.4 15s-6.9 15-15.4 15H60V56Zm0 49h14.4c10.2 0 18.5 8 18.5 18s-8.3 18-18.5 18H60v-36Z" fill="#0f0b08"/>
+  <path d="M120 48c0-6.6 5.4-12 12-12h26v104h-26c-6.6 0-12-5.4-12-12V48Z" fill="#b88f45"/>
+  <path d="M132 36c15.5 0 28 12.5 28 28v76h-28V36Z" fill="#f4ead1" opacity=".92"/>
+  <path d="M138 58h14v60h-14z" fill="#b88f45"/>
+  <path d="M22 160h148" stroke="#b88f45" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+</svg>

@@ -1,0 +1,1158 @@
+{
+  "nodes": [
+    {
+      "id": "但丁",
+      "label": "但丁",
+      "name": "但丁",
+      "category": "Person",
+      "degree": 117,
+      "image": {
+        "id": "core-graph-但丁",
+        "src": "/media/graph-core/但丁.jpg",
+        "title": "但丁肖像",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "但丁.jpg"
+      }
+    },
+    {
+      "id": "维吉尔",
+      "label": "维吉尔",
+      "name": "维吉尔",
+      "category": "Person",
+      "degree": 26,
+      "image": {
+        "id": "core-graph-维吉尔",
+        "src": "/media/graph-core/维吉尔.jpg",
+        "title": "维吉尔肖像",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "维吉尔.jpg"
+      }
+    },
+    {
+      "id": "Ugolino",
+      "label": "乌戈利诺",
+      "name": "乌戈利诺",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Ugolino",
+        "src": "/media/graph-core/ugolino.jpg",
+        "title": "乌戈利诺配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "ugolino.jpg"
+      }
+    },
+    {
+      "id": "featured:paolo",
+      "label": "保罗",
+      "name": "保罗",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:paolo",
+        "src": "/media/graph-core/featured-paolo.jpg",
+        "title": "保罗配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-paolo.jpg"
+      }
+    },
+    {
+      "id": "featured:cacciaguida",
+      "label": "卡恰圭达",
+      "name": "卡恰圭达",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:cacciaguida",
+        "src": "/media/graph-core/featured-cacciaguida.jpg",
+        "title": "卡恰圭达配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-cacciaguida.jpg"
+      }
+    },
+    {
+      "id": "Bernardin",
+      "label": "圣伯尔纳",
+      "name": "圣伯尔纳",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Bernardin",
+        "src": "/media/graph-core/bernardin.jpg",
+        "title": "圣伯尔纳配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "bernardin.jpg"
+      }
+    },
+    {
+      "id": "Cato",
+      "label": "小加图",
+      "name": "小加图",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Cato",
+        "src": "/media/graph-core/cato.jpg",
+        "title": "小加图配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "cato.jpg"
+      }
+    },
+    {
+      "id": "Ulysses",
+      "label": "尤利西斯",
+      "name": "尤利西斯",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Ulysses",
+        "src": "/media/graph-core/ulysses.jpg",
+        "title": "尤利西斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "ulysses.jpg"
+      }
+    },
+    {
+      "id": "featured:francesca",
+      "label": "弗兰切斯卡",
+      "name": "弗兰切斯卡",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:francesca",
+        "src": "/media/graph-core/featured-francesca.jpg",
+        "title": "弗兰切斯卡配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-francesca.jpg"
+      }
+    },
+    {
+      "id": "Statius",
+      "label": "斯塔提乌斯",
+      "name": "斯塔提乌斯",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Statius",
+        "src": "/media/graph-core/statius.jpg",
+        "title": "斯塔提乌斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "Publio Papinio Stazio (cropped).png"
+      }
+    },
+    {
+      "id": "featured:justinian",
+      "label": "查士丁尼",
+      "name": "查士丁尼",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:justinian",
+        "src": "/media/graph-core/featured-justinian.jpg",
+        "title": "查士丁尼配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-justinian.jpg"
+      }
+    },
+    {
+      "id": "featured:farinata",
+      "label": "法里纳塔",
+      "name": "法里纳塔",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:farinata",
+        "src": "/media/graph-core/featured-farinata.jpg",
+        "title": "法里纳塔配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-farinata.jpg"
+      }
+    },
+    {
+      "id": "featured:matelda",
+      "label": "玛泰尔妲",
+      "name": "玛泰尔妲",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-featured:matelda",
+        "src": "/media/graph-core/featured-matelda.jpg",
+        "title": "玛泰尔妲配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "featured-matelda.jpg"
+      }
+    },
+    {
+      "id": "Piccarda",
+      "label": "皮卡尔达",
+      "name": "皮卡尔达",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Piccarda",
+        "src": "/media/graph-core/piccarda.jpg",
+        "title": "皮卡尔达配图",
+        "credit": "Wikimedia Commons / Gustave Dore",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "Par 03, Gustave Doré, piccarda.jpg"
+      }
+    },
+    {
+      "id": "person-beatrice",
+      "label": "贝雅特丽齐",
+      "name": "贝雅特丽齐",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-person-beatrice",
+        "src": "/media/graph-core/person-beatrice.jpg",
+        "title": "贝雅特丽齐配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "person-beatrice.jpg"
+      }
+    },
+    {
+      "id": "Lucifer",
+      "label": "路西法",
+      "name": "路西法",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Lucifer",
+        "src": "/media/graph-core/lucifer.jpg",
+        "title": "路西法配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "lucifer.jpg"
+      }
+    },
+    {
+      "id": "Minos",
+      "label": "弥诺斯",
+      "name": "弥诺斯",
+      "category": "Person",
+      "degree": 16,
+      "image": {
+        "id": "core-graph-Minos",
+        "src": "/media/graph-core/minos.jpg",
+        "title": "弥诺斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "minos.jpg"
+      }
+    },
+    {
+      "id": "realm-inferno",
+      "label": "地狱",
+      "name": "地狱",
+      "category": "Place",
+      "degree": 103,
+      "image": {
+        "id": "core-graph-realm-inferno",
+        "src": "/media/graph-core/realm-inferno.jpg",
+        "title": "地狱篇配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "realm-inferno.jpg"
+      }
+    },
+    {
+      "id": "realm-paradiso",
+      "label": "天堂",
+      "name": "天堂",
+      "category": "Place",
+      "degree": 63,
+      "image": {
+        "id": "core-graph-realm-paradiso",
+        "src": "/media/graph-core/realm-paradiso.jpg",
+        "title": "天堂篇配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "realm-paradiso.jpg"
+      }
+    },
+    {
+      "id": "place-florence",
+      "label": "佛罗伦萨",
+      "name": "佛罗伦萨",
+      "category": "Place",
+      "degree": 43,
+      "image": {
+        "id": "core-graph-place-florence",
+        "src": "/media/graph-core/place-florence.jpg",
+        "title": "佛罗伦萨配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "place-florence.jpg"
+      }
+    },
+    {
+      "id": "realm-purgatorio",
+      "label": "炼狱",
+      "name": "炼狱",
+      "category": "Place",
+      "degree": 17,
+      "image": {
+        "id": "core-graph-realm-purgatorio",
+        "src": "/media/graph-core/realm-purgatorio.jpg",
+        "title": "炼狱篇配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "realm-purgatorio.jpg"
+      }
+    },
+    {
+      "id": "意大利",
+      "label": "意大利",
+      "name": "意大利",
+      "category": "Place",
+      "degree": 10,
+      "image": {
+        "id": "core-graph-意大利",
+        "src": "/media/graph-core/意大利.jpg",
+        "title": "意大利配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "意大利.jpg"
+      }
+    },
+    {
+      "id": "罗马涅",
+      "label": "罗马涅",
+      "name": "罗马涅",
+      "category": "Place",
+      "degree": 10,
+      "image": {
+        "id": "core-graph-罗马涅",
+        "src": "/media/graph-core/罗马涅.jpg",
+        "title": "罗马涅配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "罗马涅.jpg"
+      }
+    },
+    {
+      "id": "天体",
+      "label": "天体",
+      "name": "天体",
+      "category": "Place",
+      "degree": 8,
+      "image": {
+        "id": "core-graph-天体",
+        "src": "/media/graph-core/天体.jpg",
+        "title": "天体配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "天体.jpg"
+      }
+    },
+    {
+      "id": "托斯卡纳",
+      "label": "托斯卡纳",
+      "name": "托斯卡纳",
+      "category": "Place",
+      "degree": 8,
+      "image": {
+        "id": "core-graph-托斯卡纳",
+        "src": "/media/graph-core/托斯卡纳.jpg",
+        "title": "托斯卡纳配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "托斯卡纳.jpg"
+      }
+    },
+    {
+      "id": "罗马",
+      "label": "罗马",
+      "name": "罗马",
+      "category": "Place",
+      "degree": 8,
+      "image": {
+        "id": "core-graph-罗马",
+        "src": "/media/graph-core/罗马.jpg",
+        "title": "罗马配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "罗马.jpg"
+      }
+    },
+    {
+      "id": "Adamo",
+      "label": "Adamo",
+      "name": "Adamo",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Adamo",
+        "src": "/media/graph-core/adamo.jpg",
+        "title": "阿达莫配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "adamo.jpg"
+      }
+    },
+    {
+      "id": "Arno",
+      "label": "Arno",
+      "name": "Arno",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Arno",
+        "src": "/media/graph-core/arno.jpg",
+        "title": "阿诺河流域配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "arno.jpg"
+      }
+    },
+    {
+      "id": "大理石",
+      "label": "大理石",
+      "name": "大理石",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-大理石",
+        "src": "/media/graph-core/大理石.jpg",
+        "title": "大理石配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "大理石.jpg"
+      }
+    },
+    {
+      "id": "阿诺河",
+      "label": "阿诺河",
+      "name": "阿诺河",
+      "category": "Place",
+      "degree": 5,
+      "image": {
+        "id": "core-graph-阿诺河",
+        "src": "/media/graph-core/阿诺河.jpg",
+        "title": "阿诺河配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "阿诺河.jpg"
+      }
+    },
+    {
+      "id": "Acheron",
+      "label": "Acheron",
+      "name": "Acheron",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Acheron",
+        "src": "/media/graph-core/acheron.jpg",
+        "title": "阿刻戎河配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "acheron.jpg"
+      }
+    },
+    {
+      "id": "Cocytus",
+      "label": "Cocytus",
+      "name": "Cocytus",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Cocytus",
+        "src": "/media/graph-core/cocytus.jpg",
+        "title": "科库托斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "cocytus.jpg"
+      }
+    },
+    {
+      "id": "底比斯",
+      "label": "底比斯",
+      "name": "底比斯",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-底比斯",
+        "src": "/media/graph-core/底比斯.jpg",
+        "title": "底比斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "底比斯.jpg"
+      }
+    },
+    {
+      "id": "裂缝",
+      "label": "裂缝",
+      "name": "裂缝",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-裂缝",
+        "src": "/media/graph-core/裂缝.jpg",
+        "title": "裂缝配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "裂缝.jpg"
+      }
+    },
+    {
+      "id": "锡耶纳",
+      "label": "锡耶纳",
+      "name": "锡耶纳",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-锡耶纳",
+        "src": "/media/graph-core/锡耶纳.jpg",
+        "title": "锡耶纳配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "锡耶纳.jpg"
+      }
+    },
+    {
+      "id": "忘川",
+      "label": "忘川",
+      "name": "忘川",
+      "category": "Place",
+      "degree": 3,
+      "image": {
+        "id": "core-graph-忘川",
+        "src": "/media/graph-core/忘川.jpg",
+        "title": "忘川配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "忘川.jpg"
+      }
+    },
+    {
+      "id": "炼狱山",
+      "label": "炼狱山",
+      "name": "炼狱山",
+      "category": "Place",
+      "degree": 2,
+      "image": {
+        "id": "core-graph-炼狱山",
+        "src": "/media/graph-core/炼狱山.jpg",
+        "title": "炼狱山配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "炼狱山.jpg"
+      }
+    },
+    {
+      "id": "战车",
+      "label": "战车",
+      "name": "战车",
+      "category": "Event",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-战车",
+        "src": "/media/graph-core/战车.jpg",
+        "title": "战车配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "战车.jpg"
+      }
+    },
+    {
+      "id": "追逐",
+      "label": "追逐",
+      "name": "追逐",
+      "category": "Event",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-追逐",
+        "src": "/media/graph-core/追逐.jpg",
+        "title": "追逐配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "追逐.jpg"
+      }
+    },
+    {
+      "id": "concept-soul",
+      "label": "灵魂",
+      "name": "灵魂",
+      "category": "Concept",
+      "degree": 17,
+      "image": {
+        "id": "core-graph-concept-soul",
+        "src": "/media/graph-core/concept-soul.jpg",
+        "title": "灵魂配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-soul.jpg"
+      }
+    },
+    {
+      "id": "concept-god",
+      "label": "上帝",
+      "name": "上帝",
+      "category": "Concept",
+      "degree": 12,
+      "image": {
+        "id": "core-graph-concept-god",
+        "src": "/media/graph-core/concept-god.jpg",
+        "title": "上帝配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-god.jpg"
+      }
+    },
+    {
+      "id": "concept-truth",
+      "label": "真理",
+      "name": "真理",
+      "category": "Concept",
+      "degree": 7,
+      "image": {
+        "id": "core-graph-concept-truth",
+        "src": "/media/graph-core/concept-truth.jpg",
+        "title": "真理配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-truth.jpg"
+      }
+    },
+    {
+      "id": "圣灵",
+      "label": "圣灵",
+      "name": "圣灵",
+      "category": "Concept",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-圣灵",
+        "src": "/media/graph-core/圣灵.jpg",
+        "title": "圣灵配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "圣灵.jpg"
+      }
+    },
+    {
+      "id": "concept-love",
+      "label": "爱",
+      "name": "爱",
+      "category": "Concept",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-concept-love",
+        "src": "/media/graph-core/concept-love.jpg",
+        "title": "爱配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-love.jpg"
+      }
+    },
+    {
+      "id": "誓言",
+      "label": "誓言",
+      "name": "誓言",
+      "category": "Concept",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-誓言",
+        "src": "/media/graph-core/誓言.jpg",
+        "title": "誓言配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "誓言.jpg"
+      }
+    },
+    {
+      "id": "恶魔",
+      "label": "恶魔",
+      "name": "恶魔",
+      "category": "Concept",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-恶魔",
+        "src": "/media/graph-core/恶魔.jpg",
+        "title": "恶魔配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "恶魔.jpg"
+      }
+    },
+    {
+      "id": "罪犯",
+      "label": "罪犯",
+      "name": "罪犯",
+      "category": "Concept",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-罪犯",
+        "src": "/media/graph-core/罪犯.jpg",
+        "title": "罪犯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "罪犯.jpg"
+      }
+    },
+    {
+      "id": "自由意志",
+      "label": "自由意志",
+      "name": "自由意志",
+      "category": "Concept",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-自由意志",
+        "src": "/media/graph-core/自由意志.jpg",
+        "title": "自由意志配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "自由意志.jpg"
+      }
+    },
+    {
+      "id": "work-divine-comedy",
+      "label": "神曲",
+      "name": "神曲",
+      "category": "Document",
+      "degree": 10,
+      "image": {
+        "id": "core-graph-work-divine-comedy",
+        "src": "/media/graph-core/work-divine-comedy.jpg",
+        "title": "神曲配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "work-divine-comedy.jpg"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "edge-38",
+      "source": "realm-inferno",
+      "target": "维吉尔"
+    },
+    {
+      "id": "edge-39",
+      "source": "realm-inferno",
+      "target": "但丁"
+    },
+    {
+      "id": "edge-40",
+      "source": "realm-inferno",
+      "target": "realm-paradiso"
+    },
+    {
+      "id": "edge-55",
+      "source": "realm-inferno",
+      "target": "concept-soul"
+    },
+    {
+      "id": "edge-77",
+      "source": "realm-inferno",
+      "target": "Minos"
+    },
+    {
+      "id": "edge-128",
+      "source": "但丁",
+      "target": "维吉尔"
+    },
+    {
+      "id": "edge-129",
+      "source": "但丁",
+      "target": "work-divine-comedy"
+    },
+    {
+      "id": "edge-137",
+      "source": "但丁",
+      "target": "concept-love"
+    },
+    {
+      "id": "edge-143",
+      "source": "但丁",
+      "target": "person-beatrice"
+    },
+    {
+      "id": "edge-146",
+      "source": "但丁",
+      "target": "place-florence"
+    },
+    {
+      "id": "edge-148",
+      "source": "但丁",
+      "target": "concept-god"
+    },
+    {
+      "id": "edge-156",
+      "source": "但丁",
+      "target": "炼狱山"
+    },
+    {
+      "id": "edge-169",
+      "source": "但丁",
+      "target": "realm-paradiso"
+    },
+    {
+      "id": "edge-183",
+      "source": "但丁",
+      "target": "Cocytus"
+    },
+    {
+      "id": "edge-192",
+      "source": "但丁",
+      "target": "realm-purgatorio"
+    },
+    {
+      "id": "edge-195",
+      "source": "但丁",
+      "target": "忘川"
+    },
+    {
+      "id": "edge-211",
+      "source": "但丁",
+      "target": "concept-truth"
+    },
+    {
+      "id": "edge-218",
+      "source": "但丁",
+      "target": "concept-soul"
+    },
+    {
+      "id": "edge-225",
+      "source": "但丁",
+      "target": "Arno"
+    },
+    {
+      "id": "edge-237",
+      "source": "维吉尔",
+      "target": "realm-purgatorio"
+    },
+    {
+      "id": "edge-239",
+      "source": "维吉尔",
+      "target": "work-divine-comedy"
+    },
+    {
+      "id": "edge-242",
+      "source": "维吉尔",
+      "target": "炼狱山"
+    },
+    {
+      "id": "edge-244",
+      "source": "维吉尔",
+      "target": "person-beatrice"
+    },
+    {
+      "id": "edge-248",
+      "source": "维吉尔",
+      "target": "罪犯"
+    },
+    {
+      "id": "edge-253",
+      "source": "维吉尔",
+      "target": "罗马"
+    },
+    {
+      "id": "edge-263",
+      "source": "person-beatrice",
+      "target": "realm-paradiso"
+    },
+    {
+      "id": "edge-267",
+      "source": "person-beatrice",
+      "target": "work-divine-comedy"
+    },
+    {
+      "id": "edge-268",
+      "source": "person-beatrice",
+      "target": "自由意志"
+    },
+    {
+      "id": "edge-270",
+      "source": "person-beatrice",
+      "target": "誓言"
+    },
+    {
+      "id": "edge-278",
+      "source": "work-divine-comedy",
+      "target": "realm-purgatorio"
+    },
+    {
+      "id": "edge-279",
+      "source": "work-divine-comedy",
+      "target": "Piccarda"
+    },
+    {
+      "id": "edge-280",
+      "source": "work-divine-comedy",
+      "target": "自由意志"
+    },
+    {
+      "id": "edge-282",
+      "source": "work-divine-comedy",
+      "target": "誓言"
+    },
+    {
+      "id": "edge-289",
+      "source": "realm-paradiso",
+      "target": "concept-god"
+    },
+    {
+      "id": "edge-290",
+      "source": "realm-paradiso",
+      "target": "圣灵"
+    },
+    {
+      "id": "edge-319",
+      "source": "realm-paradiso",
+      "target": "concept-love"
+    },
+    {
+      "id": "edge-320",
+      "source": "realm-paradiso",
+      "target": "天体"
+    },
+    {
+      "id": "edge-349",
+      "source": "concept-love",
+      "target": "work-divine-comedy"
+    },
+    {
+      "id": "edge-355",
+      "source": "realm-inferno",
+      "target": "work-divine-comedy"
+    },
+    {
+      "id": "edge-356",
+      "source": "realm-inferno",
+      "target": "Cocytus"
+    },
+    {
+      "id": "edge-357",
+      "source": "realm-inferno",
+      "target": "Lucifer"
+    },
+    {
+      "id": "edge-363",
+      "source": "realm-inferno",
+      "target": "place-florence"
+    },
+    {
+      "id": "edge-416",
+      "source": "concept-love",
+      "target": "concept-soul"
+    },
+    {
+      "id": "edge-468",
+      "source": "自由意志",
+      "target": "concept-soul"
+    },
+    {
+      "id": "edge-486",
+      "source": "托斯卡纳",
+      "target": "罪犯"
+    },
+    {
+      "id": "edge-718",
+      "source": "concept-soul",
+      "target": "Acheron"
+    },
+    {
+      "id": "edge-868",
+      "source": "Piccarda",
+      "target": "誓言"
+    },
+    {
+      "id": "featured-edge-3",
+      "source": "featured:francesca",
+      "target": "featured:paolo"
+    },
+    {
+      "id": "featured-edge-4",
+      "source": "featured:francesca",
+      "target": "Minos"
+    },
+    {
+      "id": "featured-edge-5",
+      "source": "维吉尔",
+      "target": "Cato"
+    },
+    {
+      "id": "featured-edge-6",
+      "source": "person-beatrice",
+      "target": "Bernardin"
+    },
+    {
+      "id": "featured-edge-7",
+      "source": "但丁",
+      "target": "featured:cacciaguida"
+    },
+    {
+      "id": "featured-edge-8",
+      "source": "person-beatrice",
+      "target": "Piccarda"
+    },
+    {
+      "id": "featured-edge-9",
+      "source": "person-beatrice",
+      "target": "featured:justinian"
+    }
+  ]
+}

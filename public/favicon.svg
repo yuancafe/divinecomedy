@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="但丁三界">
+  <rect width="128" height="128" rx="24" fill="#0f0b08"/>
+  <path d="M26 100V38c0-6.6 5.4-12 12-12h14c11 0 20 9 20 20 0 8.2-4.9 15.2-12 18.3 9.6 2.6 16 10.4 16 20.4 0 12.2-10 22-22.2 22H26Z" fill="#e9d9b3"/>
+  <path d="M44 40h8.8c5.3 0 9.6 4.2 9.6 9.4S58.1 59 52.8 59H44V40Zm0 31h10.2c6.4 0 11.7 5 11.7 11.3S60.6 94 54.2 94H44V71Z" fill="#0f0b08"/>
+  <path d="M82 34c0-4.4 3.6-8 8-8h12v68H90c-4.4 0-8-3.6-8-8V34Z" fill="#b88f45"/>
+  <path d="M90 26c8.8 0 16 7.2 16 16v52H90V26Z" fill="#f4ead1" opacity=".9"/>
+  <path d="M94 40h8v40h-8z" fill="#b88f45"/>
+  <path d="M16 108h96" stroke="#b88f45" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+</svg>

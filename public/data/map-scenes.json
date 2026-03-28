@@ -1,0 +1,1470 @@
+{
+  "overview": {
+    "id": "overview",
+    "title": "神曲阅读",
+    "layers": [
+      {
+        "id": "medieval",
+        "image": {
+          "id": "overview-medieval",
+          "src": "/media/overview-medieval.webp",
+          "title": "三界宇宙结构图",
+          "credit": "素材文件夹 / 宇宙结构图",
+          "usage": [
+            "home",
+            "overview"
+          ],
+          "source": "the-universe-according-to-dante-999x1444-v0-izFW3D8TfQajMGBUqiJIAf3n2CAAHXI0vlIB_r9OcAg.webp",
+          "width": 640,
+          "height": 925
+        },
+        "label": "中世纪插图"
+      },
+      {
+        "id": "structure",
+        "image": {
+          "id": "overview-structure",
+          "src": "/media/overview-structure.webp",
+          "title": "三界古地图总览",
+          "credit": "素材文件夹 / 古地图扫描",
+          "usage": [
+            "home",
+            "overview"
+          ],
+          "source": "map-of-purgatory-from-dante-alighieris-commedia-circa-1290-v0-xkegj0r7wsc51.webp",
+          "width": 640,
+          "height": 740
+        },
+        "label": "结构示意图"
+      }
+    ],
+    "panels": [
+      {
+        "realm": "inferno",
+        "title": "Inferno",
+        "subtitle": "地狱篇",
+        "href": "/inferno",
+        "layers": [
+          {
+            "id": "medieval",
+            "image": {
+              "id": "overview-inferno-menu",
+              "src": "/media/overview-inferno-menu.jpg",
+              "title": "地狱篇总图",
+              "credit": "Commento 古图 / public media",
+              "usage": [
+                "home",
+                "overview"
+              ],
+              "source": "commento-menu-inferno.jpg",
+              "width": 900,
+              "height": 1453
+            }
+          },
+          {
+            "id": "structure",
+            "image": {
+              "id": "inferno-structure",
+              "src": "/media/inferno-structure.jpeg",
+              "title": "地狱结构示意",
+              "credit": "素材文件夹 / 地狱结构图",
+              "usage": [
+                "home",
+                "inferno"
+              ],
+              "source": "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+              "width": 640,
+              "height": 906
+            }
+          }
+        ],
+        "cantoGrid": [
+          {
+            "cantoId": 1,
+            "label": "1"
+          },
+          {
+            "cantoId": 2,
+            "label": "2"
+          },
+          {
+            "cantoId": 3,
+            "label": "3"
+          },
+          {
+            "cantoId": 4,
+            "label": "4"
+          },
+          {
+            "cantoId": 5,
+            "label": "5"
+          },
+          {
+            "cantoId": 6,
+            "label": "6"
+          },
+          {
+            "cantoId": 7,
+            "label": "7"
+          },
+          {
+            "cantoId": 8,
+            "label": "8"
+          },
+          {
+            "cantoId": 9,
+            "label": "9"
+          },
+          {
+            "cantoId": 10,
+            "label": "10"
+          },
+          {
+            "cantoId": 11,
+            "label": "11"
+          },
+          {
+            "cantoId": 12,
+            "label": "12"
+          },
+          {
+            "cantoId": 13,
+            "label": "13"
+          },
+          {
+            "cantoId": 14,
+            "label": "14"
+          },
+          {
+            "cantoId": 15,
+            "label": "15"
+          },
+          {
+            "cantoId": 16,
+            "label": "16"
+          },
+          {
+            "cantoId": 17,
+            "label": "17"
+          },
+          {
+            "cantoId": 18,
+            "label": "18"
+          },
+          {
+            "cantoId": 19,
+            "label": "19"
+          },
+          {
+            "cantoId": 20,
+            "label": "20"
+          },
+          {
+            "cantoId": 21,
+            "label": "21"
+          },
+          {
+            "cantoId": 22,
+            "label": "22"
+          },
+          {
+            "cantoId": 23,
+            "label": "23"
+          },
+          {
+            "cantoId": 24,
+            "label": "24"
+          },
+          {
+            "cantoId": 25,
+            "label": "25"
+          },
+          {
+            "cantoId": 26,
+            "label": "26"
+          },
+          {
+            "cantoId": 27,
+            "label": "27"
+          },
+          {
+            "cantoId": 28,
+            "label": "28"
+          },
+          {
+            "cantoId": 29,
+            "label": "29"
+          },
+          {
+            "cantoId": 30,
+            "label": "30"
+          },
+          {
+            "cantoId": 31,
+            "label": "31"
+          },
+          {
+            "cantoId": 32,
+            "label": "32"
+          },
+          {
+            "cantoId": 33,
+            "label": "33"
+          },
+          {
+            "cantoId": 34,
+            "label": "34"
+          }
+        ]
+      },
+      {
+        "realm": "purgatorio",
+        "title": "Purgatorio",
+        "subtitle": "炼狱篇",
+        "href": "/purgatorio",
+        "layers": [
+          {
+            "id": "medieval",
+            "image": {
+              "id": "overview-purgatorio-menu",
+              "src": "/media/overview-purgatorio-menu.jpg",
+              "title": "炼狱篇总图",
+              "credit": "Commento 古图 / public media",
+              "usage": [
+                "home",
+                "overview"
+              ],
+              "source": "commento-menu-purgatorio.jpg",
+              "width": 900,
+              "height": 1453
+            }
+          },
+          {
+            "id": "structure",
+            "image": {
+              "id": "purgatorio-structure",
+              "src": "/media/purgatorio-structure.jpeg",
+              "title": "炼狱结构示意",
+              "credit": "素材文件夹 / 炼狱结构图",
+              "usage": [
+                "home",
+                "purgatorio"
+              ],
+              "source": "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+              "width": 379,
+              "height": 368
+            }
+          }
+        ],
+        "cantoGrid": [
+          {
+            "cantoId": 35,
+            "label": "1"
+          },
+          {
+            "cantoId": 36,
+            "label": "2"
+          },
+          {
+            "cantoId": 37,
+            "label": "3"
+          },
+          {
+            "cantoId": 38,
+            "label": "4"
+          },
+          {
+            "cantoId": 39,
+            "label": "5"
+          },
+          {
+            "cantoId": 40,
+            "label": "6"
+          },
+          {
+            "cantoId": 41,
+            "label": "7"
+          },
+          {
+            "cantoId": 42,
+            "label": "8"
+          },
+          {
+            "cantoId": 43,
+            "label": "9"
+          },
+          {
+            "cantoId": 44,
+            "label": "10"
+          },
+          {
+            "cantoId": 45,
+            "label": "11"
+          },
+          {
+            "cantoId": 46,
+            "label": "12"
+          },
+          {
+            "cantoId": 47,
+            "label": "13"
+          },
+          {
+            "cantoId": 48,
+            "label": "14"
+          },
+          {
+            "cantoId": 49,
+            "label": "15"
+          },
+          {
+            "cantoId": 50,
+            "label": "16"
+          },
+          {
+            "cantoId": 51,
+            "label": "17"
+          },
+          {
+            "cantoId": 52,
+            "label": "18"
+          },
+          {
+            "cantoId": 53,
+            "label": "19"
+          },
+          {
+            "cantoId": 54,
+            "label": "20"
+          },
+          {
+            "cantoId": 55,
+            "label": "21"
+          },
+          {
+            "cantoId": 56,
+            "label": "22"
+          },
+          {
+            "cantoId": 57,
+            "label": "23"
+          },
+          {
+            "cantoId": 58,
+            "label": "24"
+          },
+          {
+            "cantoId": 59,
+            "label": "25"
+          },
+          {
+            "cantoId": 60,
+            "label": "26"
+          },
+          {
+            "cantoId": 61,
+            "label": "27"
+          },
+          {
+            "cantoId": 62,
+            "label": "28"
+          },
+          {
+            "cantoId": 63,
+            "label": "29"
+          },
+          {
+            "cantoId": 64,
+            "label": "30"
+          },
+          {
+            "cantoId": 65,
+            "label": "31"
+          },
+          {
+            "cantoId": 66,
+            "label": "32"
+          },
+          {
+            "cantoId": 67,
+            "label": "33"
+          }
+        ]
+      },
+      {
+        "realm": "paradiso",
+        "title": "Paradiso",
+        "subtitle": "天堂篇",
+        "href": "/paradiso",
+        "layers": [
+          {
+            "id": "medieval",
+            "image": {
+              "id": "overview-paradiso-menu",
+              "src": "/media/overview-paradiso-menu.jpg",
+              "title": "天堂篇总图",
+              "credit": "Commento 古图 / public media",
+              "usage": [
+                "home",
+                "overview"
+              ],
+              "source": "commento-menu-paradiso.jpg",
+              "width": 900,
+              "height": 1453
+            }
+          },
+          {
+            "id": "structure",
+            "image": {
+              "id": "paradiso-structure",
+              "src": "/media/paradiso-structure.jpg",
+              "title": "天堂结构示意",
+              "credit": "素材文件夹 / 天堂结构图",
+              "usage": [
+                "home",
+                "paradiso"
+              ],
+              "source": "6a00d83542d51e69e2014e61068874970c.jpg",
+              "width": 340,
+              "height": 583
+            }
+          }
+        ],
+        "cantoGrid": [
+          {
+            "cantoId": 68,
+            "label": "1"
+          },
+          {
+            "cantoId": 69,
+            "label": "2"
+          },
+          {
+            "cantoId": 70,
+            "label": "3"
+          },
+          {
+            "cantoId": 71,
+            "label": "4"
+          },
+          {
+            "cantoId": 72,
+            "label": "5"
+          },
+          {
+            "cantoId": 73,
+            "label": "6"
+          },
+          {
+            "cantoId": 74,
+            "label": "7"
+          },
+          {
+            "cantoId": 75,
+            "label": "8"
+          },
+          {
+            "cantoId": 76,
+            "label": "9"
+          },
+          {
+            "cantoId": 77,
+            "label": "10"
+          },
+          {
+            "cantoId": 78,
+            "label": "11"
+          },
+          {
+            "cantoId": 79,
+            "label": "12"
+          },
+          {
+            "cantoId": 80,
+            "label": "13"
+          },
+          {
+            "cantoId": 81,
+            "label": "14"
+          },
+          {
+            "cantoId": 82,
+            "label": "15"
+          },
+          {
+            "cantoId": 83,
+            "label": "16"
+          },
+          {
+            "cantoId": 84,
+            "label": "17"
+          },
+          {
+            "cantoId": 85,
+            "label": "18"
+          },
+          {
+            "cantoId": 86,
+            "label": "19"
+          },
+          {
+            "cantoId": 87,
+            "label": "20"
+          },
+          {
+            "cantoId": 88,
+            "label": "21"
+          },
+          {
+            "cantoId": 89,
+            "label": "22"
+          },
+          {
+            "cantoId": 90,
+            "label": "23"
+          },
+          {
+            "cantoId": 91,
+            "label": "24"
+          },
+          {
+            "cantoId": 92,
+            "label": "25"
+          },
+          {
+            "cantoId": 93,
+            "label": "26"
+          },
+          {
+            "cantoId": 94,
+            "label": "27"
+          },
+          {
+            "cantoId": 95,
+            "label": "28"
+          },
+          {
+            "cantoId": 96,
+            "label": "29"
+          },
+          {
+            "cantoId": 97,
+            "label": "30"
+          },
+          {
+            "cantoId": 98,
+            "label": "31"
+          },
+          {
+            "cantoId": 99,
+            "label": "32"
+          },
+          {
+            "cantoId": 100,
+            "label": "33"
+          }
+        ]
+      }
+    ]
+  },
+  "realms": {
+    "inferno": {
+      "id": "inferno",
+      "realm": "inferno",
+      "title": "地狱篇",
+      "englishTitle": "Inferno",
+      "layers": [
+        {
+          "id": "medieval",
+          "label": "中世纪插图",
+          "image": {
+            "id": "inferno-medieval",
+            "src": "/media/inferno-medieval.jpg",
+            "title": "地狱篇中世纪插图",
+            "credit": "public media / 地狱篇插图",
+            "usage": [
+              "inferno",
+              "graph"
+            ],
+            "source": "inferno-medieval.jpg",
+            "width": 931,
+            "height": 1000
+          }
+        },
+        {
+          "id": "structure",
+          "label": "结构示意图",
+          "image": {
+            "id": "inferno-structure",
+            "src": "/media/inferno-structure.jpeg",
+            "title": "地狱结构示意",
+            "credit": "素材文件夹 / 地狱结构图",
+            "usage": [
+              "home",
+              "inferno"
+            ],
+            "source": "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+            "width": 640,
+            "height": 906
+          }
+        }
+      ],
+      "regions": [
+        {
+          "id": "dark-forest",
+          "name": "黑暗森林与入口",
+          "type": "region",
+          "cantoRange": [
+            1,
+            1
+          ],
+          "box": {
+            "x": 10,
+            "y": 6,
+            "w": 80,
+            "h": 9
+          },
+          "summary": "黑暗森林与入口，对应 地狱篇 第 1 至 1 歌。"
+        },
+        {
+          "id": "gate",
+          "name": "前庭、阿刻戎河与地狱之门",
+          "type": "region",
+          "cantoRange": [
+            2,
+            3
+          ],
+          "box": {
+            "x": 11,
+            "y": 15,
+            "w": 78,
+            "h": 10
+          },
+          "summary": "前庭、阿刻戎河与地狱之门，对应 地狱篇 第 2 至 3 歌。"
+        },
+        {
+          "id": "limbo",
+          "name": "第一圈 灵薄狱",
+          "type": "region",
+          "cantoRange": [
+            4,
+            4
+          ],
+          "box": {
+            "x": 14,
+            "y": 24,
+            "w": 72,
+            "h": 8
+          },
+          "summary": "第一圈 灵薄狱，对应 地狱篇 第 4 至 4 歌。"
+        },
+        {
+          "id": "lust",
+          "name": "第二圈 色欲",
+          "type": "region",
+          "cantoRange": [
+            5,
+            5
+          ],
+          "box": {
+            "x": 16,
+            "y": 32,
+            "w": 68,
+            "h": 7
+          },
+          "summary": "第二圈 色欲，对应 地狱篇 第 5 至 5 歌。"
+        },
+        {
+          "id": "gluttony",
+          "name": "第三圈 暴食",
+          "type": "region",
+          "cantoRange": [
+            6,
+            6
+          ],
+          "box": {
+            "x": 18,
+            "y": 39,
+            "w": 64,
+            "h": 7
+          },
+          "summary": "第三圈 暴食，对应 地狱篇 第 6 至 6 歌。"
+        },
+        {
+          "id": "greed-anger",
+          "name": "第四至五圈 贪婪与愤怒",
+          "type": "region",
+          "cantoRange": [
+            7,
+            8
+          ],
+          "box": {
+            "x": 20,
+            "y": 46,
+            "w": 60,
+            "h": 9
+          },
+          "summary": "第四至五圈 贪婪与愤怒，对应 地狱篇 第 7 至 8 歌。"
+        },
+        {
+          "id": "heresy",
+          "name": "第六圈 异端",
+          "type": "region",
+          "cantoRange": [
+            9,
+            11
+          ],
+          "box": {
+            "x": 22,
+            "y": 55,
+            "w": 56,
+            "h": 9
+          },
+          "summary": "第六圈 异端，对应 地狱篇 第 9 至 11 歌。"
+        },
+        {
+          "id": "violence",
+          "name": "第七圈 暴力",
+          "type": "region",
+          "cantoRange": [
+            12,
+            17
+          ],
+          "box": {
+            "x": 25,
+            "y": 64,
+            "w": 50,
+            "h": 11
+          },
+          "summary": "第七圈 暴力，对应 地狱篇 第 12 至 17 歌。"
+        },
+        {
+          "id": "fraud",
+          "name": "第八圈 欺诈",
+          "type": "region",
+          "cantoRange": [
+            18,
+            30
+          ],
+          "box": {
+            "x": 29,
+            "y": 75,
+            "w": 42,
+            "h": 13
+          },
+          "summary": "第八圈 欺诈，对应 地狱篇 第 18 至 30 歌。"
+        },
+        {
+          "id": "treachery",
+          "name": "第九圈 背叛与冰湖",
+          "type": "region",
+          "cantoRange": [
+            31,
+            34
+          ],
+          "box": {
+            "x": 36,
+            "y": 88,
+            "w": 28,
+            "h": 10
+          },
+          "summary": "第九圈 背叛与冰湖，对应 地狱篇 第 31 至 34 歌。"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": "inferno-virgil",
+          "kind": "entity",
+          "entityId": "维吉尔",
+          "label": "维吉尔",
+          "x": 18,
+          "y": 18,
+          "summary": "罗马诗人，但丁在地狱与炼狱中的向导",
+          "cantoIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            34,
+            35,
+            36,
+            37,
+            38,
+            63
+          ]
+        },
+        {
+          "id": "inferno-dark-wood",
+          "kind": "event",
+          "entityId": "featured:dark-forest-event",
+          "label": "迷失",
+          "x": 80,
+          "y": 10,
+          "summary": "全诗开篇的迷途事件，标志着灵魂与道路的危机",
+          "cantoIds": [
+            1
+          ]
+        },
+        {
+          "id": "inferno-minos",
+          "kind": "entity",
+          "entityId": "Minos",
+          "label": "弥诺斯",
+          "x": 29,
+          "y": 31,
+          "summary": "在第二圈前审判灵魂的古代法官，以尾巴缠绕次数判定圈层",
+          "cantoIds": [
+            5
+          ]
+        },
+        {
+          "id": "inferno-francesca",
+          "kind": "entity",
+          "entityId": "featured:francesca",
+          "label": "弗兰切斯卡",
+          "x": 72,
+          "y": 26,
+          "summary": "第二圈色欲者中最著名的女性亡魂，与保罗同受风暴卷挟",
+          "cantoIds": [
+            5
+          ]
+        },
+        {
+          "id": "inferno-farinata",
+          "kind": "entity",
+          "entityId": "featured:farinata",
+          "label": "法里纳塔",
+          "x": 71,
+          "y": 58,
+          "summary": "第六圈异端者中高大的佛罗伦萨贵族",
+          "cantoIds": [
+            10
+          ]
+        },
+        {
+          "id": "inferno-ulysses",
+          "kind": "entity",
+          "entityId": "Ulysses",
+          "label": "尤利西斯",
+          "x": 56,
+          "y": 79,
+          "summary": "第八圈中最著名的谋略者之一，以越界的求知欲著称",
+          "cantoIds": [
+            26
+          ]
+        },
+        {
+          "id": "inferno-ugolino",
+          "kind": "entity",
+          "entityId": "Ugolino",
+          "label": "乌戈利诺",
+          "x": 42,
+          "y": 92,
+          "summary": "第九圈中最著名的背叛者与受害者形象之一",
+          "cantoIds": [
+            33
+          ]
+        },
+        {
+          "id": "inferno-lucifer",
+          "kind": "entity",
+          "entityId": "Lucifer",
+          "label": "路西法",
+          "x": 56,
+          "y": 97,
+          "summary": "地狱最深处的堕天使，被冻在科库托斯中心",
+          "cantoIds": [
+            34
+          ]
+        }
+      ],
+      "defaultCantoId": 1
+    },
+    "purgatorio": {
+      "id": "purgatorio",
+      "realm": "purgatorio",
+      "title": "炼狱篇",
+      "englishTitle": "Purgatorio",
+      "layers": [
+        {
+          "id": "medieval",
+          "label": "中世纪插图",
+          "image": {
+            "id": "purgatorio-medieval",
+            "src": "/media/purgatorio-medieval.jpg",
+            "title": "炼狱篇中世纪插图",
+            "credit": "public media / 炼狱篇插图",
+            "usage": [
+              "purgatorio",
+              "graph"
+            ],
+            "source": "purgatorio-medieval.jpg",
+            "width": 903,
+            "height": 663
+          }
+        },
+        {
+          "id": "structure",
+          "label": "结构示意图",
+          "image": {
+            "id": "purgatorio-structure",
+            "src": "/media/purgatorio-structure.jpeg",
+            "title": "炼狱结构示意",
+            "credit": "素材文件夹 / 炼狱结构图",
+            "usage": [
+              "home",
+              "purgatorio"
+            ],
+            "source": "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+            "width": 379,
+            "height": 368
+          }
+        }
+      ],
+      "regions": [
+        {
+          "id": "shore",
+          "name": "海岸与前炼狱",
+          "type": "region",
+          "cantoRange": [
+            1,
+            9
+          ],
+          "box": {
+            "x": 34,
+            "y": 84,
+            "w": 46,
+            "h": 11
+          },
+          "summary": "海岸与前炼狱，对应 炼狱篇 第 1 至 9 歌。"
+        },
+        {
+          "id": "gate",
+          "name": "炼狱之门",
+          "type": "region",
+          "cantoRange": [
+            9,
+            10
+          ],
+          "box": {
+            "x": 42,
+            "y": 68,
+            "w": 10,
+            "h": 8
+          },
+          "summary": "炼狱之门，对应 炼狱篇 第 9 至 10 歌。"
+        },
+        {
+          "id": "terrace-1",
+          "name": "第一层 傲慢",
+          "type": "region",
+          "cantoRange": [
+            10,
+            12
+          ],
+          "box": {
+            "x": 44,
+            "y": 61,
+            "w": 15,
+            "h": 6
+          },
+          "summary": "第一层 傲慢，对应 炼狱篇 第 10 至 12 歌。"
+        },
+        {
+          "id": "terrace-2",
+          "name": "第二层 嫉妒",
+          "type": "region",
+          "cantoRange": [
+            13,
+            15
+          ],
+          "box": {
+            "x": 47,
+            "y": 54,
+            "w": 16,
+            "h": 6
+          },
+          "summary": "第二层 嫉妒，对应 炼狱篇 第 13 至 15 歌。"
+        },
+        {
+          "id": "terrace-3",
+          "name": "第三层 愤怒",
+          "type": "region",
+          "cantoRange": [
+            15,
+            17
+          ],
+          "box": {
+            "x": 49,
+            "y": 48,
+            "w": 17,
+            "h": 6
+          },
+          "summary": "第三层 愤怒，对应 炼狱篇 第 15 至 17 歌。"
+        },
+        {
+          "id": "terrace-4",
+          "name": "第四层 懒惰",
+          "type": "region",
+          "cantoRange": [
+            18,
+            19
+          ],
+          "box": {
+            "x": 51,
+            "y": 41,
+            "w": 16,
+            "h": 6
+          },
+          "summary": "第四层 懒惰，对应 炼狱篇 第 18 至 19 歌。"
+        },
+        {
+          "id": "terrace-5",
+          "name": "第五层 贪婪",
+          "type": "region",
+          "cantoRange": [
+            19,
+            22
+          ],
+          "box": {
+            "x": 52,
+            "y": 35,
+            "w": 16,
+            "h": 6
+          },
+          "summary": "第五层 贪婪，对应 炼狱篇 第 19 至 22 歌。"
+        },
+        {
+          "id": "terrace-6",
+          "name": "第六层 暴食",
+          "type": "region",
+          "cantoRange": [
+            22,
+            24
+          ],
+          "box": {
+            "x": 54,
+            "y": 29,
+            "w": 15,
+            "h": 6
+          },
+          "summary": "第六层 暴食，对应 炼狱篇 第 22 至 24 歌。"
+        },
+        {
+          "id": "terrace-7",
+          "name": "第七层 色欲",
+          "type": "region",
+          "cantoRange": [
+            25,
+            27
+          ],
+          "box": {
+            "x": 56,
+            "y": 23,
+            "w": 14,
+            "h": 6
+          },
+          "summary": "第七层 色欲，对应 炼狱篇 第 25 至 27 歌。"
+        },
+        {
+          "id": "earthly-paradise",
+          "name": "地上乐园",
+          "type": "region",
+          "cantoRange": [
+            28,
+            33
+          ],
+          "box": {
+            "x": 57,
+            "y": 10,
+            "w": 18,
+            "h": 10
+          },
+          "summary": "地上乐园，对应 炼狱篇 第 28 至 33 歌。"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": "purgatorio-cato",
+          "kind": "entity",
+          "entityId": "Cato",
+          "label": "小加图",
+          "x": 27,
+          "y": 84,
+          "summary": "炼狱山脚的守卫者，象征自由与道德坚贞",
+          "cantoIds": [
+            35
+          ]
+        },
+        {
+          "id": "purgatorio-gate-event",
+          "kind": "event",
+          "entityId": "featured:purgatory-gate-event",
+          "label": "炼狱之门",
+          "x": 49,
+          "y": 72,
+          "summary": "但丁正式进入炼狱的门槛时刻",
+          "cantoIds": [
+            45
+          ]
+        },
+        {
+          "id": "purgatorio-virgil",
+          "kind": "entity",
+          "entityId": "维吉尔",
+          "label": "维吉尔",
+          "x": 40,
+          "y": 82,
+          "summary": "罗马诗人，但丁在地狱与炼狱中的向导",
+          "cantoIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            34,
+            35,
+            36,
+            37,
+            38,
+            63
+          ]
+        },
+        {
+          "id": "purgatorio-statius",
+          "kind": "entity",
+          "entityId": "Statius",
+          "label": "斯塔提乌斯",
+          "x": 61,
+          "y": 36,
+          "summary": "在炼狱后段加入旅程的诗人",
+          "cantoIds": [
+            51,
+            52,
+            53,
+            54
+          ]
+        },
+        {
+          "id": "purgatorio-matelda",
+          "kind": "entity",
+          "entityId": "featured:matelda",
+          "label": "玛泰尔妲",
+          "x": 74,
+          "y": 13,
+          "summary": "地上乐园中的女性形象，引导但丁理解忘川与忆涧",
+          "cantoIds": [
+            62,
+            63,
+            64
+          ]
+        },
+        {
+          "id": "purgatorio-beatrice",
+          "kind": "entity",
+          "entityId": "person-beatrice",
+          "label": "贝雅特丽齐",
+          "x": 67,
+          "y": 7,
+          "summary": "但丁的精神引导者与恩典象征，在《天堂篇》中接替维吉尔继续引领诗人上升",
+          "cantoIds": [
+            2,
+            30,
+            31,
+            32,
+            63,
+            64,
+            68,
+            69,
+            70,
+            71
+          ]
+        }
+      ],
+      "defaultCantoId": 35
+    },
+    "paradiso": {
+      "id": "paradiso",
+      "realm": "paradiso",
+      "title": "天堂篇",
+      "englishTitle": "Paradiso",
+      "layers": [
+        {
+          "id": "medieval",
+          "label": "中世纪插图",
+          "image": {
+            "id": "paradiso-medieval",
+            "src": "/media/paradiso-medieval.jpg",
+            "title": "天堂篇中世纪插图",
+            "credit": "public media / 天堂篇插图",
+            "usage": [
+              "paradiso",
+              "graph"
+            ],
+            "source": "paradiso-medieval.jpg",
+            "width": 7626,
+            "height": 10264
+          }
+        },
+        {
+          "id": "structure",
+          "label": "结构示意图",
+          "image": {
+            "id": "paradiso-structure",
+            "src": "/media/paradiso-structure.jpg",
+            "title": "天堂结构示意",
+            "credit": "素材文件夹 / 天堂结构图",
+            "usage": [
+              "home",
+              "paradiso"
+            ],
+            "source": "6a00d83542d51e69e2014e61068874970c.jpg",
+            "width": 340,
+            "height": 583
+          }
+        }
+      ],
+      "regions": [
+        {
+          "id": "moon",
+          "name": "月球天",
+          "type": "region",
+          "cantoRange": [
+            1,
+            5
+          ],
+          "box": {
+            "x": 53,
+            "y": 84,
+            "w": 10,
+            "h": 6
+          },
+          "summary": "月球天，对应 天堂篇 第 1 至 5 歌。"
+        },
+        {
+          "id": "mercury",
+          "name": "水星天",
+          "type": "region",
+          "cantoRange": [
+            5,
+            7
+          ],
+          "box": {
+            "x": 50,
+            "y": 77,
+            "w": 16,
+            "h": 6
+          },
+          "summary": "水星天，对应 天堂篇 第 5 至 7 歌。"
+        },
+        {
+          "id": "venus",
+          "name": "金星天",
+          "type": "region",
+          "cantoRange": [
+            8,
+            9
+          ],
+          "box": {
+            "x": 47,
+            "y": 69,
+            "w": 20,
+            "h": 6
+          },
+          "summary": "金星天，对应 天堂篇 第 8 至 9 歌。"
+        },
+        {
+          "id": "sun",
+          "name": "太阳天",
+          "type": "region",
+          "cantoRange": [
+            10,
+            14
+          ],
+          "box": {
+            "x": 42,
+            "y": 60,
+            "w": 28,
+            "h": 6
+          },
+          "summary": "太阳天，对应 天堂篇 第 10 至 14 歌。"
+        },
+        {
+          "id": "mars",
+          "name": "火星天",
+          "type": "region",
+          "cantoRange": [
+            14,
+            18
+          ],
+          "box": {
+            "x": 38,
+            "y": 51,
+            "w": 34,
+            "h": 6
+          },
+          "summary": "火星天，对应 天堂篇 第 14 至 18 歌。"
+        },
+        {
+          "id": "jupiter",
+          "name": "木星天",
+          "type": "region",
+          "cantoRange": [
+            18,
+            20
+          ],
+          "box": {
+            "x": 35,
+            "y": 43,
+            "w": 40,
+            "h": 6
+          },
+          "summary": "木星天，对应 天堂篇 第 18 至 20 歌。"
+        },
+        {
+          "id": "saturn",
+          "name": "土星天",
+          "type": "region",
+          "cantoRange": [
+            21,
+            22
+          ],
+          "box": {
+            "x": 32,
+            "y": 35,
+            "w": 45,
+            "h": 6
+          },
+          "summary": "土星天，对应 天堂篇 第 21 至 22 歌。"
+        },
+        {
+          "id": "fixed-stars",
+          "name": "恒星天",
+          "type": "region",
+          "cantoRange": [
+            23,
+            27
+          ],
+          "box": {
+            "x": 26,
+            "y": 24,
+            "w": 56,
+            "h": 8
+          },
+          "summary": "恒星天，对应 天堂篇 第 23 至 27 歌。"
+        },
+        {
+          "id": "primum-mobile",
+          "name": "原动天",
+          "type": "region",
+          "cantoRange": [
+            28,
+            29
+          ],
+          "box": {
+            "x": 22,
+            "y": 14,
+            "w": 63,
+            "h": 6
+          },
+          "summary": "原动天，对应 天堂篇 第 28 至 29 歌。"
+        },
+        {
+          "id": "empyrean",
+          "name": "至高天与白色玫瑰",
+          "type": "region",
+          "cantoRange": [
+            30,
+            33
+          ],
+          "box": {
+            "x": 31,
+            "y": 4,
+            "w": 46,
+            "h": 7
+          },
+          "summary": "至高天与白色玫瑰，对应 天堂篇 第 30 至 33 歌。"
+        }
+      ],
+      "hotspots": [
+        {
+          "id": "paradiso-beatrice",
+          "kind": "entity",
+          "entityId": "person-beatrice",
+          "label": "贝雅特丽齐",
+          "x": 60,
+          "y": 83,
+          "summary": "但丁的精神引导者与恩典象征，在《天堂篇》中接替维吉尔继续引领诗人上升",
+          "cantoIds": [
+            2,
+            30,
+            31,
+            32,
+            63,
+            64,
+            68,
+            69,
+            70,
+            71
+          ]
+        },
+        {
+          "id": "paradiso-piccarda",
+          "kind": "entity",
+          "entityId": "Piccarda",
+          "label": "皮卡尔达",
+          "x": 51,
+          "y": 80,
+          "summary": "天堂月球天中的首位福灵，讲述誓愿与自由意志",
+          "cantoIds": [
+            70,
+            71
+          ]
+        },
+        {
+          "id": "paradiso-justinian",
+          "kind": "entity",
+          "entityId": "featured:justinian",
+          "label": "查士丁尼",
+          "x": 56,
+          "y": 74,
+          "summary": "天堂水星天中的皇帝灵魂，讲述罗马历史与帝国使命",
+          "cantoIds": [
+            73
+          ]
+        },
+        {
+          "id": "paradiso-cacciaguida",
+          "kind": "entity",
+          "entityId": "featured:cacciaguida",
+          "label": "卡恰圭达",
+          "x": 52,
+          "y": 52,
+          "summary": "但丁的祖先，在火星天中预言诗人的流放与使命",
+          "cantoIds": [
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        },
+        {
+          "id": "paradiso-bernard",
+          "kind": "entity",
+          "entityId": "Bernardin",
+          "label": "圣伯尔纳",
+          "x": 64,
+          "y": 10,
+          "summary": "天堂终章中的最后引导者，引领但丁观看白色玫瑰与神视",
+          "cantoIds": [
+            99,
+            100
+          ]
+        }
+      ],
+      "defaultCantoId": 68
+    }
+  }
+}

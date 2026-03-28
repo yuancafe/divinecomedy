@@ -1,0 +1,197 @@
+[
+  {
+    "id": "home-hero-domenico",
+    "src": "/media/home-hero-domenico.jpg",
+    "title": "多梅尼科·迪·米凯利诺《但丁与三界》",
+    "credit": "public media / 主页主图",
+    "usage": [
+      "home"
+    ],
+    "source": "Dante_Domenico_di_Michelino.jpg",
+    "width": 2048,
+    "height": 1649
+  },
+  {
+    "id": "overview-medieval",
+    "src": "/media/overview-medieval.webp",
+    "title": "三界宇宙结构图",
+    "credit": "素材文件夹 / 宇宙结构图",
+    "usage": [
+      "home",
+      "overview"
+    ],
+    "source": "the-universe-according-to-dante-999x1444-v0-izFW3D8TfQajMGBUqiJIAf3n2CAAHXI0vlIB_r9OcAg.webp",
+    "width": 640,
+    "height": 925
+  },
+  {
+    "id": "overview-structure",
+    "src": "/media/overview-structure.webp",
+    "title": "三界古地图总览",
+    "credit": "素材文件夹 / 古地图扫描",
+    "usage": [
+      "home",
+      "overview"
+    ],
+    "source": "map-of-purgatory-from-dante-alighieris-commedia-circa-1290-v0-xkegj0r7wsc51.webp",
+    "width": 640,
+    "height": 740
+  },
+  {
+    "id": "inferno-medieval",
+    "src": "/media/inferno-medieval.jpg",
+    "title": "地狱篇中世纪插图",
+    "credit": "public media / 地狱篇插图",
+    "usage": [
+      "inferno",
+      "graph"
+    ],
+    "source": "inferno-medieval.jpg",
+    "width": 931,
+    "height": 1000
+  },
+  {
+    "id": "overview-inferno-menu",
+    "src": "/media/overview-inferno-menu.jpg",
+    "title": "地狱篇总图",
+    "credit": "Commento 古图 / public media",
+    "usage": [
+      "home",
+      "overview"
+    ],
+    "source": "commento-menu-inferno.jpg",
+    "width": 900,
+    "height": 1453
+  },
+  {
+    "id": "inferno-structure",
+    "src": "/media/inferno-structure.jpeg",
+    "title": "地狱结构示意",
+    "credit": "素材文件夹 / 地狱结构图",
+    "usage": [
+      "home",
+      "inferno"
+    ],
+    "source": "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+    "width": 640,
+    "height": 906
+  },
+  {
+    "id": "purgatorio-medieval",
+    "src": "/media/purgatorio-medieval.jpg",
+    "title": "炼狱篇中世纪插图",
+    "credit": "public media / 炼狱篇插图",
+    "usage": [
+      "purgatorio",
+      "graph"
+    ],
+    "source": "purgatorio-medieval.jpg",
+    "width": 903,
+    "height": 663
+  },
+  {
+    "id": "overview-purgatorio-menu",
+    "src": "/media/overview-purgatorio-menu.jpg",
+    "title": "炼狱篇总图",
+    "credit": "Commento 古图 / public media",
+    "usage": [
+      "home",
+      "overview"
+    ],
+    "source": "commento-menu-purgatorio.jpg",
+    "width": 900,
+    "height": 1453
+  },
+  {
+    "id": "purgatorio-structure",
+    "src": "/media/purgatorio-structure.jpeg",
+    "title": "炼狱结构示意",
+    "credit": "素材文件夹 / 炼狱结构图",
+    "usage": [
+      "home",
+      "purgatorio"
+    ],
+    "source": "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+    "width": 379,
+    "height": 368
+  },
+  {
+    "id": "paradiso-medieval",
+    "src": "/media/paradiso-medieval.jpg",
+    "title": "天堂篇中世纪插图",
+    "credit": "public media / 天堂篇插图",
+    "usage": [
+      "paradiso",
+      "graph"
+    ],
+    "source": "paradiso-medieval.jpg",
+    "width": 7626,
+    "height": 10264
+  },
+  {
+    "id": "overview-paradiso-menu",
+    "src": "/media/overview-paradiso-menu.jpg",
+    "title": "天堂篇总图",
+    "credit": "Commento 古图 / public media",
+    "usage": [
+      "home",
+      "overview"
+    ],
+    "source": "commento-menu-paradiso.jpg",
+    "width": 900,
+    "height": 1453
+  },
+  {
+    "id": "paradiso-structure",
+    "src": "/media/paradiso-structure.jpg",
+    "title": "天堂结构示意",
+    "credit": "素材文件夹 / 天堂结构图",
+    "usage": [
+      "home",
+      "paradiso"
+    ],
+    "source": "6a00d83542d51e69e2014e61068874970c.jpg",
+    "width": 340,
+    "height": 583
+  },
+  {
+    "id": "dante-portrait",
+    "src": "/media/dante-portrait.jpeg",
+    "title": "但丁肖像",
+    "credit": "田德望译本插图 / public media",
+    "usage": [
+      "dante",
+      "about"
+    ],
+    "source": "dante-portrait.jpeg",
+    "width": 755,
+    "height": 944
+  },
+  {
+    "id": "dante-diagram",
+    "src": "/media/dante-diagram.webp",
+    "title": "但丁宇宙结构图",
+    "credit": "public media / 结构配图",
+    "usage": [
+      "dante",
+      "about",
+      "graph"
+    ],
+    "source": "dante-diagram.webp",
+    "width": 640,
+    "height": 716
+  },
+  {
+    "id": "purgatory-plan",
+    "src": "/media/purgatory-plan.png",
+    "title": "炼狱层级示意",
+    "credit": "素材文件夹 / 炼狱层级图",
+    "usage": [
+      "about",
+      "purgatorio"
+    ],
+    "source": "Purgatory_Plan.png",
+    "width": 250,
+    "height": 260
+  }
+]

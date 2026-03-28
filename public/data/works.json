@@ -1,0 +1,62 @@
+[
+  {
+    "id": "it_pg1012",
+    "kind": "italian",
+    "title": "La Divina Commedia",
+    "displayTitle": "意大利文原文",
+    "translator": "但丁",
+    "language": "it",
+    "source": "/Users/yuan/Downloads/Comedy/pg1012-images-3.epub",
+    "format": "epub"
+  },
+  {
+    "id": "en_pg8800",
+    "kind": "english",
+    "title": "The Divine Comedy",
+    "displayTitle": "英文",
+    "translator": "Henry Francis Cary / Project Gutenberg",
+    "language": "en",
+    "source": "/Users/yuan/Downloads/Comedy/pg8800-images-3.epub",
+    "format": "epub"
+  },
+  {
+    "id": "zh_zhu",
+    "kind": "chinese",
+    "title": "神曲",
+    "displayTitle": "朱维基译本",
+    "translator": "朱维基",
+    "language": "zh",
+    "source": "/Users/yuan/Downloads/Comedy/神曲 (译文名著精选) -- 但丁·阿利吉耶里 (Dante Alighieri) -- 2011 -- 上海译文出版社 -- bf364812178f9dd2b875dcc7501384e8 -- Anna’s Archive.epub",
+    "format": "epub"
+  },
+  {
+    "id": "zh_wang",
+    "kind": "chinese",
+    "title": "神曲：全3册",
+    "displayTitle": "王维克译本",
+    "translator": "王维克",
+    "language": "zh",
+    "source": "/Users/yuan/Downloads/Comedy/神曲_全3册(133幅插图全新重制,翻译家王维克经典译本,地狱、净界、天堂套装全收录)(果麦经典) -- 但丁 -- 2019 -- cj5_1561 -- aa2b979b12470e8846b5c0f432eb0bc6 -- Anna’s Archive.epub",
+    "format": "epub"
+  },
+  {
+    "id": "zh_tian",
+    "kind": "chinese",
+    "title": "神曲：地狱篇、炼狱篇、天国篇",
+    "displayTitle": "田德望译本",
+    "translator": "田德望",
+    "language": "zh",
+    "source": "/Users/yuan/Downloads/Comedy/神曲_地狱篇、炼狱篇、天国篇 (田德望译文集) -- (意)但丁(Dante Alighieri)著; 但丁; 田德望 -- 2015 -- 北京：人民文学出版社 -- 9787020100309 -- 2606e85e7e18412d9bcdfbef7ce2b85b -- Anna’s Archive.epub",
+    "format": "epub"
+  },
+  {
+    "id": "zh_huang",
+    "kind": "chinese",
+    "title": "神曲（全三册）",
+    "displayTitle": "黄国彬译本",
+    "translator": "黄国彬",
+    "language": "zh",
+    "source": "/Users/yuan/Downloads/Comedy/神曲(全三册)(知名翻译家黄国彬意大利语原文直译,华语世界首部三韵体《神曲》全译本 理想国出品) -- 但丁·阿利格耶里 黄国彬译 -- Di 1 ban, Haikou, 2021 -- 理想国丨海南出版社 -- 978757.epub",
+    "format": "epub"
+  }
+]
