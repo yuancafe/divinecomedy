@@ -14,7 +14,7 @@
             "home",
             "overview"
           ],
-          "source": "the-universe-according-to-dante-999x1444-v0-izFW3D8TfQajMGBUqiJIAf3n2CAAHXI0vlIB_r9OcAg.webp",
+          "source": "overview-medieval.webp",
           "width": 640,
           "height": 925
         },
@@ -31,7 +31,7 @@
             "home",
             "overview"
           ],
-          "source": "map-of-purgatory-from-dante-alighieris-commedia-circa-1290-v0-xkegj0r7wsc51.webp",
+          "source": "overview-structure.webp",
           "width": 640,
           "height": 740
         },
@@ -72,7 +72,7 @@
                 "home",
                 "inferno"
               ],
-              "source": "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+              "source": "inferno-structure.jpeg",
               "width": 640,
               "height": 906
             }
@@ -250,7 +250,7 @@
                 "home",
                 "purgatorio"
               ],
-              "source": "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+              "source": "purgatorio-structure.jpeg",
               "width": 379,
               "height": 368
             }
@@ -424,7 +424,7 @@
                 "home",
                 "paradiso"
               ],
-              "source": "6a00d83542d51e69e2014e61068874970c.jpg",
+              "source": "paradiso-structure.jpg",
               "width": 340,
               "height": 583
             }
@@ -603,7 +603,7 @@
               "home",
               "inferno"
             ],
-            "source": "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+            "source": "inferno-structure.jpeg",
             "width": 640,
             "height": 906
           }
@@ -916,7 +916,7 @@
               "home",
               "purgatorio"
             ],
-            "source": "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+            "source": "purgatorio-structure.jpeg",
             "width": 379,
             "height": 368
           }
@@ -1219,7 +1219,7 @@
               "home",
               "paradiso"
             ],
-            "source": "6a00d83542d51e69e2014e61068874970c.jpg",
+            "source": "paradiso-structure.jpg",
             "width": 340,
             "height": 583
           }

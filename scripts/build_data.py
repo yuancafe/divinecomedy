@@ -26,15 +26,17 @@ PUBLIC_DATA_DIR = PUBLIC_DIR / "data"
 PUBLIC_MEDIA_DIR = PUBLIC_DIR / "media"
 CORE_GRAPH_MEDIA_DIR = PUBLIC_MEDIA_DIR / "graph-core"
 DB_DIR = ROOT / "data"
+READER_SOURCE_DIR = DB_DIR / "reader_sources"
+PAGE_SOURCE_DIR = DB_DIR / "page_sources"
+GRAPH_SOURCE_DIR = DB_DIR / "graph_sources"
 DB_PATH = DB_DIR / "divine_comedy.db"
 REMOTE_JSON_CACHE: dict[str, dict[str, Any]] = {}
 REMOTE_BYTES_CACHE: dict[str, bytes] = {}
 
 COMEDY_ROOT = Path("/Users/yuan/Downloads/Comedy")
-SKILL_ROOT = Path("/Users/yuan/.agents/skills/divine-comedy-expert/references")
-GRAPH_DATA_PATH = SKILL_ROOT / "visualization" / "graph_data.json"
-ENTITY_DETAILS_PATH = SKILL_ROOT / "visualization" / "entity_details.json"
-COMPARISON_MD_PATH = COMEDY_ROOT / "对比.md"
+GRAPH_DATA_PATH = GRAPH_SOURCE_DIR / "graph_data.json"
+ENTITY_DETAILS_PATH = GRAPH_SOURCE_DIR / "entity_details.json"
+COMPARISON_MD_PATH = PAGE_SOURCE_DIR / "epic-comparisons.md"
 
 WORKS: list[dict[str, Any]] = [
     {
@@ -44,8 +46,9 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "意大利文原文",
         "translator": "但丁",
         "language": "it",
-        "source": str(COMEDY_ROOT / "pg1012-images-3.epub"),
-        "format": "epub",
+        "source": "data/reader_sources/it_pg1012.md",
+        "format": "markdown",
+        "bootstrapSource": str(COMEDY_ROOT / "pg1012-images-3.epub"),
     },
     {
         "id": "en_pg8800",
@@ -54,8 +57,9 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "英文",
         "translator": "Henry Francis Cary / Project Gutenberg",
         "language": "en",
-        "source": str(COMEDY_ROOT / "pg8800-images-3.epub"),
-        "format": "epub",
+        "source": "data/reader_sources/en_pg8800.md",
+        "format": "markdown",
+        "bootstrapSource": str(COMEDY_ROOT / "pg8800-images-3.epub"),
     },
     {
         "id": "zh_zhu",
@@ -64,11 +68,12 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "朱维基译本",
         "translator": "朱维基",
         "language": "zh",
-        "source": str(
+        "source": "data/reader_sources/zh_zhu.md",
+        "format": "markdown",
+        "bootstrapSource": str(
             COMEDY_ROOT
             / "神曲 (译文名著精选) -- 但丁·阿利吉耶里 (Dante Alighieri) -- 2011 -- 上海译文出版社 -- bf364812178f9dd2b875dcc7501384e8 -- Anna’s Archive.epub"
         ),
-        "format": "epub",
     },
     {
         "id": "zh_wang",
@@ -77,11 +82,12 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "王维克译本",
         "translator": "王维克",
         "language": "zh",
-        "source": str(
+        "source": "data/reader_sources/zh_wang.md",
+        "format": "markdown",
+        "bootstrapSource": str(
             COMEDY_ROOT
             / "神曲_全3册(133幅插图全新重制,翻译家王维克经典译本,地狱、净界、天堂套装全收录)(果麦经典) -- 但丁 -- 2019 -- cj5_1561 -- aa2b979b12470e8846b5c0f432eb0bc6 -- Anna’s Archive.epub"
         ),
-        "format": "epub",
     },
     {
         "id": "zh_tian",
@@ -90,11 +96,12 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "田德望译本",
         "translator": "田德望",
         "language": "zh",
-        "source": str(
+        "source": "data/reader_sources/zh_tian.md",
+        "format": "markdown",
+        "bootstrapSource": str(
             COMEDY_ROOT
             / "神曲_地狱篇、炼狱篇、天国篇 (田德望译文集) -- (意)但丁(Dante Alighieri)著; 但丁; 田德望 -- 2015 -- 北京：人民文学出版社 -- 9787020100309 -- 2606e85e7e18412d9bcdfbef7ce2b85b -- Anna’s Archive.epub"
         ),
-        "format": "epub",
     },
     {
         "id": "zh_huang",
@@ -103,11 +110,12 @@ WORKS: list[dict[str, Any]] = [
         "displayTitle": "黄国彬译本",
         "translator": "黄国彬",
         "language": "zh",
-        "source": str(
+        "source": "data/reader_sources/zh_huang.md",
+        "format": "markdown",
+        "bootstrapSource": str(
             COMEDY_ROOT
             / "神曲(全三册)(知名翻译家黄国彬意大利语原文直译,华语世界首部三韵体《神曲》全译本 理想国出品) -- 但丁·阿利格耶里 黄国彬译 -- Di 1 ban, Haikou, 2021 -- 理想国丨海南出版社 -- 978757.epub"
         ),
-        "format": "epub",
     },
 ]
 
@@ -260,14 +268,14 @@ ILLUSTRATION_SPECS = [
     },
     {
         "id": "overview-medieval",
-        "source": COMEDY_ROOT / "the-universe-according-to-dante-999x1444-v0-izFW3D8TfQajMGBUqiJIAf3n2CAAHXI0vlIB_r9OcAg.webp",
+        "source": PUBLIC_MEDIA_DIR / "overview-medieval.webp",
         "title": "三界宇宙结构图",
         "credit": "素材文件夹 / 宇宙结构图",
         "usage": ["home", "overview"],
     },
     {
         "id": "overview-structure",
-        "source": COMEDY_ROOT / "map-of-purgatory-from-dante-alighieris-commedia-circa-1290-v0-xkegj0r7wsc51.webp",
+        "source": PUBLIC_MEDIA_DIR / "overview-structure.webp",
         "title": "三界古地图总览",
         "credit": "素材文件夹 / 古地图扫描",
         "usage": ["home", "overview"],
@@ -288,7 +296,7 @@ ILLUSTRATION_SPECS = [
     },
     {
         "id": "inferno-structure",
-        "source": COMEDY_ROOT / "5fdf8db1cb13495409235789ab068558d109b2dedc8f.jpeg",
+        "source": PUBLIC_MEDIA_DIR / "inferno-structure.jpeg",
         "title": "地狱结构示意",
         "credit": "素材文件夹 / 地狱结构图",
         "usage": ["home", "inferno"],
@@ -309,7 +317,7 @@ ILLUSTRATION_SPECS = [
     },
     {
         "id": "purgatorio-structure",
-        "source": COMEDY_ROOT / "35a85edf8db1cb13495480fe201c414e9258d009dd8f.jpeg",
+        "source": PUBLIC_MEDIA_DIR / "purgatorio-structure.jpeg",
         "title": "炼狱结构示意",
         "credit": "素材文件夹 / 炼狱结构图",
         "usage": ["home", "purgatorio"],
@@ -330,7 +338,7 @@ ILLUSTRATION_SPECS = [
     },
     {
         "id": "paradiso-structure",
-        "source": COMEDY_ROOT / "6a00d83542d51e69e2014e61068874970c.jpg",
+        "source": PUBLIC_MEDIA_DIR / "paradiso-structure.jpg",
         "title": "天堂结构示意",
         "credit": "素材文件夹 / 天堂结构图",
         "usage": ["home", "paradiso"],
@@ -351,7 +359,7 @@ ILLUSTRATION_SPECS = [
     },
     {
         "id": "purgatory-plan",
-        "source": COMEDY_ROOT / "Purgatory_Plan.png",
+        "source": PUBLIC_MEDIA_DIR / "purgatory-plan.png",
         "title": "炼狱层级示意",
         "credit": "素材文件夹 / 炼狱层级图",
         "usage": ["about", "purgatorio"],
@@ -923,6 +931,9 @@ def ensure_dirs() -> None:
     PUBLIC_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
     CORE_GRAPH_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
     DB_DIR.mkdir(parents=True, exist_ok=True)
+    READER_SOURCE_DIR.mkdir(parents=True, exist_ok=True)
+    PAGE_SOURCE_DIR.mkdir(parents=True, exist_ok=True)
+    GRAPH_SOURCE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def clear_generated_json() -> None:
@@ -969,6 +980,133 @@ def build_default_reader_columns() -> list[str]:
         "zh_wang:text",
         "zh_wang:notes",
     ]
+
+
+def reader_source_path(work_id: str) -> Path:
+    return READER_SOURCE_DIR / f"{work_id}.md"
+
+
+def all_reader_sources_available() -> bool:
+    return all(reader_source_path(work["id"]).exists() for work in WORKS)
+
+
+def write_reader_sources(reader_cantos: list[dict[str, Any]]) -> None:
+    canto_lookup = {canto["id"]: canto for canto in reader_cantos}
+    for work in WORKS:
+        blocks = [
+            "---",
+            f"workId: {work['id']}",
+            f"displayTitle: {work['displayTitle']}",
+            f"translator: {work['translator']}",
+            f"language: {work['language']}",
+            f"kind: {work['kind']}",
+            "---",
+            "",
+        ]
+        for canto_id in range(1, 101):
+            canto = canto_lookup[canto_id]
+            panel_lookup = {panel["id"]: panel for panel in canto["panels"]}
+            text_panel = panel_lookup.get(f"{work['id']}:text")
+            note_panel = panel_lookup.get(f"{work['id']}:notes")
+            blocks.extend(
+                [
+                    f"## canto {canto_id}",
+                    f"realm: {canto['realm']}",
+                    f"cantoNumber: {canto['cantoNumber']}",
+                    "",
+                    "### text",
+                    "~~~text",
+                    (text_panel or {}).get("content", "").rstrip(),
+                    "~~~",
+                    "",
+                ]
+            )
+            if note_panel:
+                blocks.extend(
+                    [
+                        "### notes",
+                        "~~~text",
+                        note_panel.get("content", "").rstrip(),
+                        "~~~",
+                        "",
+                    ]
+                )
+        reader_source_path(work["id"]).write_text("\n".join(blocks).rstrip() + "\n")
+
+
+def parse_numbered_note_entries(note_content: str) -> list[dict[str, Any]]:
+    entries: list[dict[str, Any]] = []
+    for line in [item.strip() for item in note_content.splitlines() if item.strip()]:
+        match = re.match(r"^(\d+)\.\s*(.+)$", line)
+        if match:
+            entries.append({"number": int(match.group(1)), "content": match.group(2), "anchor": note_anchor_from_content(match.group(2))})
+    return entries
+
+
+def load_reader_cantos_from_markdown() -> list[dict[str, Any]]:
+    parsed_by_work: dict[str, dict[int, dict[str, str]]] = {}
+    canto_pattern = re.compile(
+        r"^## canto (\d+)\nrealm: ([a-z]+)\ncantoNumber: (\d+)\n(.*?)(?=^## canto \d+\n|\Z)",
+        re.MULTILINE | re.DOTALL,
+    )
+    panel_pattern = re.compile(r"^### (text|notes)\n~~~text\n(.*?)\n~~~", re.MULTILINE | re.DOTALL)
+
+    for work in WORKS:
+        payload = reader_source_path(work["id"]).read_text()
+        canto_map: dict[int, dict[str, str]] = {}
+        for match in canto_pattern.finditer(payload):
+            canto_id = int(match.group(1))
+            body = match.group(4)
+            panels: dict[str, str] = {}
+            for panel_match in panel_pattern.finditer(body):
+                panels[panel_match.group(1)] = panel_match.group(2).strip("\n")
+            canto_map[canto_id] = panels
+        parsed_by_work[work["id"]] = canto_map
+
+    reader_cantos: list[dict[str, Any]] = []
+    for global_idx in range(1, 101):
+        realm, canto_number = realm_from_global_index(global_idx)
+        panels = []
+        for work in WORKS:
+            panel_data = parsed_by_work.get(work["id"], {}).get(global_idx, {})
+            text_content = panel_data.get("text", "")
+            note_content = panel_data.get("notes", "")
+            note_entries = parse_numbered_note_entries(note_content) if work["id"] in NUMBERED_NOTES_WORK_IDS else []
+            panels.append(
+                {
+                    "id": build_panel_id(work["id"], "text"),
+                    "workId": work["id"],
+                    "kind": "text",
+                    "label": work["displayTitle"],
+                    "content": text_content,
+                    "contentHtml": render_text_html(text_content.splitlines(), note_entries if note_entries else None),
+                }
+            )
+            if note_content and work["id"] not in NOTELESS_WORK_IDS:
+                panels.append(
+                    {
+                        "id": build_panel_id(work["id"], "notes"),
+                        "workId": work["id"],
+                        "kind": "notes",
+                        "label": f"{work['displayTitle']}注释",
+                        "content": note_content,
+                        "contentHtml": render_notes_html(note_entries) if note_entries else render_text_html(note_content.splitlines()),
+                        "noteEntries": [{"number": entry["number"], "content": entry["content"]} for entry in note_entries] if note_entries else [],
+                    }
+                )
+        reader_cantos.append(
+            {
+                "id": global_idx,
+                "realm": realm,
+                "realmLabel": REALM_LABELS[realm],
+                "cantoNumber": canto_number,
+                "globalNumber": global_idx,
+                "title": f"{REALM_LABELS[realm]} {CN_NUMBERS[canto_number]}歌",
+                "summary": f"{REALM_LABELS[realm]}第 {canto_number} 歌整歌对读。",
+                "panels": panels,
+            }
+        )
+    return reader_cantos
 
 
 def parse_ncx_toc(epub_path: Path) -> list[tuple[str, str]]:
@@ -2389,6 +2527,22 @@ def write_json(name: str, payload: Any) -> None:
     (PUBLIC_DATA_DIR / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2))
 
 
+def sanitized_works(works: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        {
+            "id": work["id"],
+            "kind": work["kind"],
+            "title": work["title"],
+            "displayTitle": work["displayTitle"],
+            "translator": work["translator"],
+            "language": work["language"],
+            "source": work["source"],
+            "format": work["format"],
+        }
+        for work in works
+    ]
+
+
 def write_supporting_json(
     works: list[dict[str, Any]],
     reader_cantos: list[dict[str, Any]],
@@ -2402,6 +2556,7 @@ def write_supporting_json(
     about_page: dict[str, Any],
     epic_comparisons: list[dict[str, Any]],
 ) -> None:
+    public_works = sanitized_works(works)
     write_json(
         "manifest.json",
         {
@@ -2417,7 +2572,7 @@ def write_supporting_json(
             "defaultReaderColumnCount": 4,
         },
     )
-    write_json("works.json", works)
+    write_json("works.json", public_works)
     write_json("reader-cantos.json", reader_cantos)
     write_json("entity-catalog.json", entity_catalog)
     write_json("entity-mentions.json", entity_mentions)
@@ -2452,6 +2607,7 @@ def build_database(
     graph_full: dict[str, Any],
     epic_comparisons: list[dict[str, Any]],
 ) -> None:
+    works = sanitized_works(works)
     if DB_PATH.exists():
         DB_PATH.unlink()
 
@@ -2667,24 +2823,32 @@ def build_database(
 
 def main() -> None:
     ensure_dirs()
-    required_sources = [Path(work["source"]) for work in WORKS] + [COMPARISON_MD_PATH, GRAPH_DATA_PATH, ENTITY_DETAILS_PATH]
-    if not all(path.exists() for path in required_sources):
-        print("Source books or reference assets are unavailable; reusing committed generated data.")
-        if not any((PUBLIC_DATA_DIR / name).exists() for name in ["reader-cantos.json", "entity-catalog.json", "graph-core.json"]):
-            raise FileNotFoundError("Committed generated data is missing; cannot build in fallback mode.")
-        return
-
     clear_generated_json()
 
-    work_lines = {
-        "it_pg1012": load_italian_cantos(Path(WORKS[0]["source"])),
-        "en_pg8800": load_english_cantos(Path(WORKS[1]["source"])),
-        "zh_zhu": load_chinese_cantos(Path(WORKS[2]["source"]), "zh_zhu"),
-        "zh_wang": load_chinese_cantos(Path(WORKS[3]["source"]), "zh_wang"),
-        "zh_tian": load_chinese_cantos(Path(WORKS[4]["source"]), "zh_tian"),
-        "zh_huang": load_chinese_cantos(Path(WORKS[5]["source"]), "zh_huang"),
-    }
-    reader_cantos = build_reader_cantos(work_lines)
+    if all_reader_sources_available():
+        reader_cantos = load_reader_cantos_from_markdown()
+        print("Loaded committed markdown reader sources.")
+    else:
+        bootstrap_sources = [Path(work["bootstrapSource"]) for work in WORKS]
+        if not all(path.exists() for path in bootstrap_sources):
+            raise FileNotFoundError("Reader markdown sources are missing, and local EPUB bootstrap sources are unavailable.")
+        work_lines = {
+            "it_pg1012": load_italian_cantos(Path(WORKS[0]["bootstrapSource"])),
+            "en_pg8800": load_english_cantos(Path(WORKS[1]["bootstrapSource"])),
+            "zh_zhu": load_chinese_cantos(Path(WORKS[2]["bootstrapSource"]), "zh_zhu"),
+            "zh_wang": load_chinese_cantos(Path(WORKS[3]["bootstrapSource"]), "zh_wang"),
+            "zh_tian": load_chinese_cantos(Path(WORKS[4]["bootstrapSource"]), "zh_tian"),
+            "zh_huang": load_chinese_cantos(Path(WORKS[5]["bootstrapSource"]), "zh_huang"),
+        }
+        reader_cantos = build_reader_cantos(work_lines)
+        write_reader_sources(reader_cantos)
+        print("Bootstrapped committed markdown reader sources from local EPUBs.")
+
+    required_repo_sources = [COMPARISON_MD_PATH, GRAPH_DATA_PATH, ENTITY_DETAILS_PATH]
+    if not all(path.exists() for path in required_repo_sources):
+        missing = [str(path) for path in required_repo_sources if not path.exists()]
+        raise FileNotFoundError(f"Missing committed source files: {', '.join(missing)}")
+
     illustrations = copy_illustrations()
     entity_catalog, entity_mentions, raw_graph, canonical_map = build_entity_catalog(reader_cantos, illustrations)
     graph_core, graph_full = build_graph_payloads(entity_catalog, raw_graph, canonical_map)
