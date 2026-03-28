@@ -17,13 +17,10 @@ import urllib.request
 import warnings
 import zipfile
 from collections import Counter, defaultdict
+from xml.etree import ElementTree as ET
 from pathlib import Path
 from typing import Any
-
-from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 from PIL import Image
-
-warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = ROOT / "public"
@@ -981,11 +978,17 @@ def parse_ncx_toc(epub_path: Path) -> list[tuple[str, str]]:
         toc_name = next((name for name in zf.namelist() if name.lower().endswith(".ncx")), None)
         if not toc_name:
             return []
-        soup = BeautifulSoup(zf.read(toc_name), "xml")
-        return [
-            (normalize_text(nav_point.find("text").get_text(" ", strip=True)), nav_point.find("content")["src"])
-            for nav_point in soup.find_all("navPoint")
-        ]
+        root = ET.fromstring(zf.read(toc_name))
+        entries: list[tuple[str, str]] = []
+        for nav_point in root.iter():
+            if strip_tag(nav_point.tag) != "navPoint":
+                continue
+            text_node = next((child for child in nav_point.iter() if strip_tag(child.tag) == "text"), None)
+            content_node = next((child for child in nav_point.iter() if strip_tag(child.tag) == "content"), None)
+            if text_node is None or content_node is None:
+                continue
+            entries.append((normalize_text("".join(text_node.itertext())), content_node.attrib.get("src", "")))
+        return entries
 
 
 def resolve_zip_path(zf: zipfile.ZipFile, path: str) -> str:
@@ -997,10 +1000,37 @@ def resolve_zip_path(zf: zipfile.ZipFile, path: str) -> str:
     raise KeyError(f"No archive member matches {path!r}")
 
 
-def extract_lines_from_soup(soup: BeautifulSoup) -> list[str]:
+def strip_tag(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1] if "}" in tag else tag
+
+
+def element_text(element: ET.Element) -> str:
+    return normalize_text(" ".join(part for part in element.itertext()))
+
+
+def parse_xml_fragment(data: bytes | str) -> ET.Element:
+    if isinstance(data, bytes):
+        data = data.decode("utf-8", errors="ignore")
+    return ET.fromstring(data)
+
+
+def iter_doc_order(root: ET.Element) -> list[ET.Element]:
+    return list(root.iter())
+
+
+def find_element_by_id(root: ET.Element, target_id: str) -> ET.Element | None:
+    for element in root.iter():
+        if element.attrib.get("id") == target_id:
+            return element
+    return None
+
+
+def extract_lines_from_xml(root: ET.Element) -> list[str]:
     lines: list[str] = []
-    for block in soup.find_all(["p", "div"]):
-        text = block.get_text("\n", strip=True)
+    for block in root.iter():
+        if strip_tag(block.tag) not in {"p", "div"}:
+            continue
+        text = element_text(block)
         if not text:
             continue
         if len(text) > 360 and "\n" not in text:
@@ -1045,8 +1075,14 @@ def extract_lines_from_soup(soup: BeautifulSoup) -> list[str]:
 
 def load_italian_cantos(epub_path: Path) -> dict[int, list[str]]:
     with zipfile.ZipFile(epub_path) as zf:
-        soup = BeautifulSoup(zf.read("OEBPS/toc.xhtml"), "lxml")
-        entries = [(normalize_text(a.get_text(" ", strip=True)), a.get("href", "")) for a in soup.find_all("a") if "Canto" in normalize_text(a.get_text(" ", strip=True))]
+        toc = parse_xml_fragment(zf.read("OEBPS/toc.xhtml"))
+        entries = []
+        for a in toc.iter():
+            if strip_tag(a.tag) != "a":
+                continue
+            label = normalize_text(" ".join(a.itertext()))
+            if "Canto" in label:
+                entries.append((label, a.attrib.get("href", "")))
         cantos: dict[int, list[str]] = {}
         for label, href in entries:
             file_name, _, anchor = href.partition("#")
@@ -1057,25 +1093,29 @@ def load_italian_cantos(epub_path: Path) -> dict[int, list[str]]:
             realm = {"Inferno": "inferno", "Purgatorio": "purgatorio", "Paradiso": "paradiso"}[realm_word]
             offset = {"inferno": 0, "purgatorio": 34, "paradiso": 67}[realm]
             global_idx = offset + ROMANS.index(roman) + 1
-            html = BeautifulSoup(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")), "lxml")
-            target = html.find(id=anchor)
+            html = parse_xml_fragment(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")))
+            target = find_element_by_id(html, anchor)
             fragments = []
             if target:
-                for elem in target.find_all_next():
-                    if elem == target:
+                seen = False
+                for elem in html.iter():
+                    if elem is target:
+                        seen = True
                         continue
-                    if elem.name == "h3" and fragments:
+                    if not seen:
+                        continue
+                    if strip_tag(elem.tag) == "h3" and fragments:
                         break
-                    if elem.name == "p":
-                        fragments.append(str(elem))
-            cantos[global_idx] = extract_lines_from_soup(BeautifulSoup("\n".join(fragments), "lxml"))
+                    if strip_tag(elem.tag) == "p":
+                        fragments.append(ET.tostring(elem, encoding="unicode"))
+            cantos[global_idx] = extract_lines_from_xml(parse_xml_fragment("<root>" + "".join(fragments) + "</root>"))
         return cantos
 
 
 def load_english_cantos(epub_path: Path) -> dict[int, list[str]]:
     with zipfile.ZipFile(epub_path) as zf:
-        soup = BeautifulSoup(zf.read("OEBPS/toc.xhtml"), "lxml")
-        entries = [(normalize_text(a.get_text(" ", strip=True)), a.get("href", "")) for a in soup.find_all("a")]
+        toc = parse_xml_fragment(zf.read("OEBPS/toc.xhtml"))
+        entries = [(normalize_text(" ".join(a.itertext())), a.attrib.get("href", "")) for a in toc.iter() if strip_tag(a.tag) == "a"]
         cantos: dict[int, list[str]] = {}
         current_realm = "inferno"
         for label, href in entries:
@@ -1096,20 +1136,24 @@ def load_english_cantos(epub_path: Path) -> dict[int, list[str]]:
             roman = match.group(1)
             offset = {"inferno": 0, "purgatorio": 34, "paradiso": 67}[current_realm]
             global_idx = offset + ROMANS.index(roman) + 1
-            html = BeautifulSoup(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")), "lxml")
-            target = html.find(id=anchor) if anchor else None
+            html = parse_xml_fragment(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")))
+            target = find_element_by_id(html, anchor) if anchor else None
             if target:
                 fragments = []
-                for elem in target.find_all_next():
-                    if elem == target:
+                seen = False
+                for elem in html.iter():
+                    if elem is target:
+                        seen = True
                         continue
-                    if elem.name in {"h1", "h2", "h3"} and fragments:
+                    if not seen:
+                        continue
+                    if strip_tag(elem.tag) in {"h1", "h2", "h3"} and fragments:
                         break
-                    if elem.name == "p":
-                        fragments.append(str(elem))
-                cantos[global_idx] = extract_lines_from_soup(BeautifulSoup("\n".join(fragments), "lxml"))
+                    if strip_tag(elem.tag) == "p":
+                        fragments.append(ET.tostring(elem, encoding="unicode"))
+                cantos[global_idx] = extract_lines_from_xml(parse_xml_fragment("<root>" + "".join(fragments) + "</root>"))
             else:
-                cantos[global_idx] = extract_lines_from_soup(html)
+                cantos[global_idx] = extract_lines_from_xml(html)
         return cantos
 
 
@@ -1154,21 +1198,25 @@ def load_chinese_cantos(epub_path: Path, work_id: str) -> dict[int, list[str]]:
             next_anchor = None
             if idx + 1 < len(entries) and entries[idx + 1][1] == file_path:
                 next_anchor = entries[idx + 1][2]
-            soup = BeautifulSoup(zf.read(resolve_zip_path(zf, file_path)), "lxml")
+            soup = parse_xml_fragment(zf.read(resolve_zip_path(zf, file_path)))
             if anchor:
-                target = soup.find(id=anchor)
+                target = find_element_by_id(soup, anchor)
                 if target:
                     fragments = []
-                    for elem in target.find_all_next():
-                        if elem == target:
+                    seen = False
+                    for elem in soup.iter():
+                        if elem is target:
+                            seen = True
                             continue
-                        if next_anchor and elem.get("id") == next_anchor:
+                        if not seen:
+                            continue
+                        if next_anchor and elem.attrib.get("id") == next_anchor:
                             break
-                        if elem.name in {"p", "div"}:
-                            fragments.append(str(elem))
-                    cantos[global_idx] = extract_lines_from_soup(BeautifulSoup("\n".join(fragments), "lxml"))
+                        if strip_tag(elem.tag) in {"p", "div"}:
+                            fragments.append(ET.tostring(elem, encoding="unicode"))
+                    cantos[global_idx] = extract_lines_from_xml(parse_xml_fragment("<root>" + "".join(fragments) + "</root>"))
                     continue
-            cantos[global_idx] = extract_lines_from_soup(soup)
+            cantos[global_idx] = extract_lines_from_xml(soup)
     return cantos
 
 
