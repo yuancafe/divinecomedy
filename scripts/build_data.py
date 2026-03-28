@@ -1006,6 +1006,23 @@ def element_text(element: ET.Element) -> str:
     return normalize_text(" ".join(part for part in element.itertext()))
 
 
+def element_text_with_breaks(element: ET.Element) -> str:
+    parts: list[str] = []
+
+    def walk(node: ET.Element) -> None:
+        if node.text:
+            parts.append(node.text)
+        for child in list(node):
+            if strip_tag(child.tag) == "br":
+                parts.append("\n")
+            walk(child)
+            if child.tail:
+                parts.append(child.tail)
+
+    walk(element)
+    return "".join(parts).strip()
+
+
 def parse_xml_fragment(data: bytes | str) -> ET.Element:
     if isinstance(data, bytes):
         data = data.decode("utf-8", errors="ignore")
@@ -1026,9 +1043,12 @@ def find_element_by_id(root: ET.Element, target_id: str) -> ET.Element | None:
 def extract_lines_from_xml(root: ET.Element) -> list[str]:
     lines: list[str] = []
     for block in root.iter():
-        if strip_tag(block.tag) not in {"p", "div"}:
+        tag = strip_tag(block.tag)
+        if tag not in {"p", "div"}:
             continue
-        text = element_text(block)
+        if tag == "div" and any(strip_tag(child.tag) in {"p", "div"} for child in list(block)):
+            continue
+        text = element_text_with_breaks(block)
         if not text:
             continue
         if len(text) > 360 and "\n" not in text:
@@ -1094,7 +1114,7 @@ def load_italian_cantos(epub_path: Path) -> dict[int, list[str]]:
             html = parse_xml_fragment(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")))
             target = find_element_by_id(html, anchor)
             fragments = []
-            if target:
+            if target is not None:
                 seen = False
                 for elem in html.iter():
                     if elem is target:
@@ -1136,7 +1156,7 @@ def load_english_cantos(epub_path: Path) -> dict[int, list[str]]:
             global_idx = offset + ROMANS.index(roman) + 1
             html = parse_xml_fragment(zf.read(resolve_zip_path(zf, f"OEBPS/{file_name}")))
             target = find_element_by_id(html, anchor) if anchor else None
-            if target:
+            if target is not None:
                 fragments = []
                 seen = False
                 for elem in html.iter():
@@ -1199,7 +1219,7 @@ def load_chinese_cantos(epub_path: Path, work_id: str) -> dict[int, list[str]]:
             soup = parse_xml_fragment(zf.read(resolve_zip_path(zf, file_path)))
             if anchor:
                 target = find_element_by_id(soup, anchor)
-                if target:
+                if target is not None:
                     fragments = []
                     seen = False
                     for elem in soup.iter():

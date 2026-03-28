@@ -469,6 +469,42 @@
       }
     },
     {
+      "id": "Adamo",
+      "label": "Adamo",
+      "name": "Adamo",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Adamo",
+        "src": "/media/graph-core/adamo.jpg",
+        "title": "阿达莫配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "adamo.jpg"
+      }
+    },
+    {
+      "id": "Arno",
+      "label": "Arno",
+      "name": "Arno",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Arno",
+        "src": "/media/graph-core/arno.jpg",
+        "title": "阿诺河流域配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "arno.jpg"
+      }
+    },
+    {
       "id": "大理石",
       "label": "大理石",
       "name": "大理石",
@@ -502,6 +538,42 @@
           "entity"
         ],
         "source": "阿诺河.jpg"
+      }
+    },
+    {
+      "id": "Acheron",
+      "label": "Acheron",
+      "name": "Acheron",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Acheron",
+        "src": "/media/graph-core/acheron.jpg",
+        "title": "阿刻戎河配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "acheron.jpg"
+      }
+    },
+    {
+      "id": "Cocytus",
+      "label": "Cocytus",
+      "name": "Cocytus",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Cocytus",
+        "src": "/media/graph-core/cocytus.jpg",
+        "title": "科库托斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "cocytus.jpg"
       }
     },
     {
@@ -878,6 +950,11 @@
       "target": "realm-paradiso"
     },
     {
+      "id": "edge-183",
+      "source": "但丁",
+      "target": "Cocytus"
+    },
+    {
       "id": "edge-192",
       "source": "但丁",
       "target": "realm-purgatorio"
@@ -896,6 +973,11 @@
       "id": "edge-218",
       "source": "但丁",
       "target": "concept-soul"
+    },
+    {
+      "id": "edge-225",
+      "source": "但丁",
+      "target": "Arno"
     },
     {
       "id": "edge-237",
@@ -998,6 +1080,11 @@
       "target": "work-divine-comedy"
     },
     {
+      "id": "edge-356",
+      "source": "realm-inferno",
+      "target": "Cocytus"
+    },
+    {
       "id": "edge-357",
       "source": "realm-inferno",
       "target": "Lucifer"
@@ -1021,6 +1108,11 @@
       "id": "edge-486",
       "source": "托斯卡纳",
       "target": "罪犯"
+    },
+    {
+      "id": "edge-718",
+      "source": "concept-soul",
+      "target": "Acheron"
     },
     {
       "id": "edge-868",

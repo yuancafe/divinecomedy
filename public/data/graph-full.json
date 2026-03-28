@@ -47,21 +47,23 @@
       "image": null
     },
     {
-      "id": "concept-god",
-      "label": "上帝",
-      "name": "上帝",
-      "category": "Concept",
-      "degree": 12,
+      "id": "realm-paradiso",
+      "label": "天堂",
+      "name": "天堂",
+      "category": "Place",
+      "degree": 63,
       "image": {
-        "id": "core-graph-concept-god",
-        "src": "/media/graph-core/concept-god.jpg",
-        "title": "上帝配图",
-        "credit": "Wikimedia Commons / Wikipedia",
+        "id": "paradiso-medieval",
+        "src": "/media/paradiso-medieval.jpg",
+        "title": "天堂篇中世纪插图",
+        "credit": "public media / 天堂篇插图",
         "usage": [
-          "graph",
-          "entity"
+          "paradiso",
+          "graph"
         ],
-        "source": "concept-god.jpg"
+        "source": "paradiso-medieval.jpg",
+        "width": 7626,
+        "height": 10264
       }
     },
     {
@@ -83,23 +85,21 @@
       }
     },
     {
-      "id": "realm-paradiso",
-      "label": "天堂",
-      "name": "天堂",
-      "category": "Place",
-      "degree": 63,
+      "id": "concept-god",
+      "label": "上帝",
+      "name": "上帝",
+      "category": "Concept",
+      "degree": 12,
       "image": {
-        "id": "paradiso-medieval",
-        "src": "/media/paradiso-medieval.jpg",
-        "title": "天堂篇中世纪插图",
-        "credit": "public media / 天堂篇插图",
+        "id": "core-graph-concept-god",
+        "src": "/media/graph-core/concept-god.jpg",
+        "title": "上帝配图",
+        "credit": "Wikimedia Commons / Wikipedia",
         "usage": [
-          "paradiso",
-          "graph"
+          "graph",
+          "entity"
         ],
-        "source": "paradiso-medieval.jpg",
-        "width": 7626,
-        "height": 10264
+        "source": "concept-god.jpg"
       }
     },
     {
@@ -135,6 +135,24 @@
       "image": null
     },
     {
+      "id": "罗马",
+      "label": "罗马",
+      "name": "罗马",
+      "category": "Place",
+      "degree": 8,
+      "image": {
+        "id": "core-graph-罗马",
+        "src": "/media/graph-core/罗马.jpg",
+        "title": "罗马配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "罗马.jpg"
+      }
+    },
+    {
       "id": "realm-purgatorio",
       "label": "炼狱",
       "name": "炼狱",
@@ -161,24 +179,6 @@
       "category": "Person",
       "degree": 8,
       "image": null
-    },
-    {
-      "id": "罗马",
-      "label": "罗马",
-      "name": "罗马",
-      "category": "Place",
-      "degree": 8,
-      "image": {
-        "id": "core-graph-罗马",
-        "src": "/media/graph-core/罗马.jpg",
-        "title": "罗马配图",
-        "credit": "Wikimedia Commons / Wikipedia",
-        "usage": [
-          "graph",
-          "entity"
-        ],
-        "source": "罗马.jpg"
-      }
     },
     {
       "id": "人类",
@@ -221,14 +221,6 @@
       "image": null
     },
     {
-      "id": "罪恶",
-      "label": "罪恶",
-      "name": "罪恶",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "人间",
       "label": "人间",
       "name": "人间",
@@ -245,6 +237,14 @@
       "image": null
     },
     {
+      "id": "罪恶",
+      "label": "罪恶",
+      "name": "罪恶",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "being-angel",
       "label": "天使",
       "name": "天使",
@@ -253,25 +253,17 @@
       "image": null
     },
     {
-      "id": "父亲",
-      "label": "父亲",
-      "name": "父亲",
-      "category": "Other",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "基督教",
-      "label": "基督教",
-      "name": "基督教",
-      "category": "Other",
+      "id": "concept-virtue",
+      "label": "美德",
+      "name": "美德",
+      "category": "Concept",
       "degree": 3,
       "image": null
     },
     {
-      "id": "火焰",
-      "label": "火焰",
-      "name": "火焰",
+      "id": "父亲",
+      "label": "父亲",
+      "name": "父亲",
       "category": "Other",
       "degree": 2,
       "image": null
@@ -285,11 +277,63 @@
       "image": null
     },
     {
-      "id": "光芒",
-      "label": "光芒",
-      "name": "光芒",
+      "id": "基督教",
+      "label": "基督教",
+      "name": "基督教",
       "category": "Other",
-      "degree": 4,
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "concept-love",
+      "label": "爱",
+      "name": "爱",
+      "category": "Concept",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-concept-love",
+        "src": "/media/graph-core/concept-love.jpg",
+        "title": "爱配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-love.jpg"
+      }
+    },
+    {
+      "id": "火焰",
+      "label": "火焰",
+      "name": "火焰",
+      "category": "Other",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "concept-truth",
+      "label": "真理",
+      "name": "真理",
+      "category": "Concept",
+      "degree": 7,
+      "image": {
+        "id": "core-graph-concept-truth",
+        "src": "/media/graph-core/concept-truth.jpg",
+        "title": "真理配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "concept-truth.jpg"
+      }
+    },
+    {
+      "id": "自然",
+      "label": "自然",
+      "name": "自然",
+      "category": "Other",
+      "degree": 2,
       "image": null
     },
     {
@@ -301,43 +345,11 @@
       "image": null
     },
     {
-      "id": "导师",
-      "label": "导师",
-      "name": "导师",
-      "category": "Person",
+      "id": "光芒",
+      "label": "光芒",
+      "name": "光芒",
+      "category": "Other",
       "degree": 4,
-      "image": null
-    },
-    {
-      "id": "自然",
-      "label": "自然",
-      "name": "自然",
-      "category": "Other",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "光辉",
-      "label": "光辉",
-      "name": "光辉",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "肉体",
-      "label": "肉体",
-      "name": "肉体",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "天空",
-      "label": "天空",
-      "name": "天空",
-      "category": "Person",
-      "degree": 0,
       "image": null
     },
     {
@@ -377,25 +389,41 @@
       "image": null
     },
     {
+      "id": "肉体",
+      "label": "肉体",
+      "name": "肉体",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "天空",
+      "label": "天空",
+      "name": "天空",
+      "category": "Person",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "导师",
+      "label": "导师",
+      "name": "导师",
+      "category": "Person",
+      "degree": 4,
+      "image": null
+    },
+    {
+      "id": "光辉",
+      "label": "光辉",
+      "name": "光辉",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "教皇",
       "label": "教皇",
       "name": "教皇",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "歌唱",
-      "label": "歌唱",
-      "name": "歌唱",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "国王",
-      "label": "国王",
-      "name": "国王",
       "category": "Person",
       "degree": 1,
       "image": null
@@ -409,11 +437,27 @@
       "image": null
     },
     {
+      "id": "歌唱",
+      "label": "歌唱",
+      "name": "歌唱",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "读者",
       "label": "读者",
       "name": "读者",
       "category": "Person",
       "degree": 0,
+      "image": null
+    },
+    {
+      "id": "国王",
+      "label": "国王",
+      "name": "国王",
+      "category": "Person",
+      "degree": 1,
       "image": null
     },
     {
@@ -451,6 +495,22 @@
       "image": null
     },
     {
+      "id": "战争",
+      "label": "战争",
+      "name": "战争",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "法国",
+      "label": "法国",
+      "name": "法国",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "天体",
       "label": "天体",
       "name": "天体",
@@ -469,61 +529,11 @@
       }
     },
     {
-      "id": "战争",
-      "label": "战争",
-      "name": "战争",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "法国",
-      "label": "法国",
-      "name": "法国",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "concept-truth",
-      "label": "真理",
-      "name": "真理",
-      "category": "Concept",
-      "degree": 7,
-      "image": {
-        "id": "core-graph-concept-truth",
-        "src": "/media/graph-core/concept-truth.jpg",
-        "title": "真理配图",
-        "credit": "Wikimedia Commons / Wikipedia",
-        "usage": [
-          "graph",
-          "entity"
-        ],
-        "source": "concept-truth.jpg"
-      }
-    },
-    {
-      "id": "concept-virtue",
-      "label": "美德",
-      "name": "美德",
-      "category": "Concept",
-      "degree": 3,
-      "image": null
-    },
-    {
       "id": "正义",
       "label": "正义",
       "name": "正义",
       "category": "Concept",
       "degree": 3,
-      "image": null
-    },
-    {
-      "id": "祈祷",
-      "label": "祈祷",
-      "name": "祈祷",
-      "category": "Concept",
-      "degree": 0,
       "image": null
     },
     {
@@ -543,11 +553,11 @@
       "image": null
     },
     {
-      "id": "土地",
-      "label": "土地",
-      "name": "土地",
-      "category": "Place",
-      "degree": 1,
+      "id": "祈祷",
+      "label": "祈祷",
+      "name": "祈祷",
+      "category": "Concept",
+      "degree": 0,
       "image": null
     },
     {
@@ -556,6 +566,22 @@
       "name": "彼得",
       "category": "Person",
       "degree": 4,
+      "image": null
+    },
+    {
+      "id": "土地",
+      "label": "土地",
+      "name": "土地",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "罪人",
+      "label": "罪人",
+      "name": "罪人",
+      "category": "Person",
+      "degree": 16,
       "image": null
     },
     {
@@ -580,14 +606,6 @@
       "name": "影子",
       "category": "Person",
       "degree": 1,
-      "image": null
-    },
-    {
-      "id": "罪人",
-      "label": "罪人",
-      "name": "罪人",
-      "category": "Person",
-      "degree": 16,
       "image": null
     },
     {
@@ -617,14 +635,6 @@
       "image": null
     },
     {
-      "id": "十字架",
-      "label": "十字架",
-      "name": "十字架",
-      "category": "Document",
-      "degree": 6,
-      "image": null
-    },
-    {
       "id": "圣女",
       "label": "圣女",
       "name": "圣女",
@@ -641,11 +651,27 @@
       "image": null
     },
     {
+      "id": "十字架",
+      "label": "十字架",
+      "name": "十字架",
+      "category": "Document",
+      "degree": 6,
+      "image": null
+    },
+    {
       "id": "亚当",
       "label": "亚当",
       "name": "亚当",
       "category": "Document",
       "degree": 5,
+      "image": null
+    },
+    {
+      "id": "教堂",
+      "label": "教堂",
+      "name": "教堂",
+      "category": "Place",
+      "degree": 1,
       "image": null
     },
     {
@@ -667,19 +693,19 @@
       }
     },
     {
-      "id": "教堂",
-      "label": "教堂",
-      "name": "教堂",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "耶路撒冷",
       "label": "耶路撒冷",
       "name": "耶路撒冷",
       "category": "Place",
       "degree": 1,
+      "image": null
+    },
+    {
+      "id": "雅典",
+      "label": "雅典",
+      "name": "雅典",
+      "category": "Place",
+      "degree": 2,
       "image": null
     },
     {
@@ -691,9 +717,9 @@
       "image": null
     },
     {
-      "id": "雅典",
-      "label": "雅典",
-      "name": "雅典",
+      "id": "山谷",
+      "label": "山谷",
+      "name": "山谷",
       "category": "Place",
       "degree": 2,
       "image": null
@@ -717,22 +743,6 @@
       }
     },
     {
-      "id": "圣母",
-      "label": "圣母",
-      "name": "圣母",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "贪婪",
-      "label": "贪婪",
-      "name": "贪婪",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "阿波罗",
       "label": "阿波罗",
       "name": "阿波罗",
@@ -741,11 +751,19 @@
       "image": null
     },
     {
-      "id": "山谷",
-      "label": "山谷",
-      "name": "山谷",
-      "category": "Place",
-      "degree": 2,
+      "id": "圣母",
+      "label": "圣母",
+      "name": "圣母",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "托马斯",
+      "label": "托马斯",
+      "name": "托马斯",
+      "category": "Event",
+      "degree": 1,
       "image": null
     },
     {
@@ -765,10 +783,10 @@
       "image": null
     },
     {
-      "id": "星星",
-      "label": "星星",
-      "name": "星星",
-      "category": "Person",
+      "id": "贪婪",
+      "label": "贪婪",
+      "name": "贪婪",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -781,26 +799,18 @@
       "image": null
     },
     {
-      "id": "圣徒",
-      "label": "圣徒",
-      "name": "圣徒",
-      "category": "Event",
+      "id": "托马斯·阿奎那",
+      "label": "托马斯·阿奎那",
+      "name": "托马斯·阿奎那",
+      "category": "Document",
       "degree": 2,
       "image": null
     },
     {
-      "id": "保罗",
-      "label": "保罗",
-      "name": "保罗",
+      "id": "三位一体",
+      "label": "三位一体",
+      "name": "三位一体",
       "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "圣光",
-      "label": "圣光",
-      "name": "圣光",
-      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -821,17 +831,33 @@
       "image": null
     },
     {
-      "id": "托马斯",
-      "label": "托马斯",
-      "name": "托马斯",
-      "category": "Event",
+      "id": "乐园",
+      "label": "乐园",
+      "name": "乐园",
+      "category": "Other",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "撒旦",
+      "label": "撒旦",
+      "name": "撒旦",
+      "category": "Place",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "保罗",
+      "label": "保罗",
+      "name": "保罗",
+      "category": "Concept",
       "degree": 1,
       "image": null
     },
     {
-      "id": "腓特烈",
-      "label": "腓特烈",
-      "name": "腓特烈",
+      "id": "星星",
+      "label": "星星",
+      "name": "星星",
       "category": "Person",
       "degree": 1,
       "image": null
@@ -845,18 +871,66 @@
       "image": null
     },
     {
-      "id": "撒旦",
-      "label": "撒旦",
-      "name": "撒旦",
+      "id": "圣徒",
+      "label": "圣徒",
+      "name": "圣徒",
+      "category": "Event",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "圣光",
+      "label": "圣光",
+      "name": "圣光",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "夏娃",
+      "label": "夏娃",
+      "name": "夏娃",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "腓特烈",
+      "label": "腓特烈",
+      "name": "腓特烈",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "罗马神话",
+      "label": "罗马神话",
+      "name": "罗马神话",
+      "category": "Other",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "奥古斯丁",
+      "label": "奥古斯丁",
+      "name": "奥古斯丁",
+      "category": "Document",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "悬崖",
+      "label": "悬崖",
+      "name": "悬崖",
       "category": "Place",
       "degree": 2,
       "image": null
     },
     {
-      "id": "三位一体",
-      "label": "三位一体",
-      "name": "三位一体",
-      "category": "Concept",
+      "id": "朱庇特",
+      "label": "朱庇特",
+      "name": "朱庇特",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -864,22 +938,6 @@
       "id": "花朵",
       "label": "花朵",
       "name": "花朵",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "托马斯·阿奎那",
-      "label": "托马斯·阿奎那",
-      "name": "托马斯·阿奎那",
-      "category": "Document",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "夏娃",
-      "label": "夏娃",
-      "name": "夏娃",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -901,35 +959,19 @@
       "image": null
     },
     {
-      "id": "罗马神话",
-      "label": "罗马神话",
-      "name": "罗马神话",
+      "id": "修道院",
+      "label": "修道院",
+      "name": "修道院",
       "category": "Other",
-      "degree": 3,
+      "degree": 7,
       "image": null
     },
     {
-      "id": "乐园",
-      "label": "乐园",
-      "name": "乐园",
-      "category": "Other",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "奥古斯丁",
-      "label": "奥古斯丁",
-      "name": "奥古斯丁",
-      "category": "Document",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "悬崖",
-      "label": "悬崖",
-      "name": "悬崖",
+      "id": "佛罗伦萨人",
+      "label": "佛罗伦萨人",
+      "name": "佛罗伦萨人",
       "category": "Place",
-      "degree": 2,
+      "degree": 1,
       "image": null
     },
     {
@@ -941,58 +983,10 @@
       "image": null
     },
     {
-      "id": "朱庇特",
-      "label": "朱庇特",
-      "name": "朱庇特",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "少女",
       "label": "少女",
       "name": "少女",
       "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "阶梯",
-      "label": "阶梯",
-      "name": "阶梯",
-      "category": "Other",
-      "degree": 0,
-      "image": null
-    },
-    {
-      "id": "修道院",
-      "label": "修道院",
-      "name": "修道院",
-      "category": "Other",
-      "degree": 7,
-      "image": null
-    },
-    {
-      "id": "圣彼得",
-      "label": "圣彼得",
-      "name": "圣彼得",
-      "category": "Person",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "特洛伊",
-      "label": "特洛伊",
-      "name": "特洛伊",
-      "category": "Place",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "圭多",
-      "label": "圭多",
-      "name": "圭多",
-      "category": "Event",
       "degree": 1,
       "image": null
     },
@@ -1010,6 +1004,54 @@
       "name": "牧师",
       "category": "Event",
       "degree": 1,
+      "image": null
+    },
+    {
+      "id": "圣彼得",
+      "label": "圣彼得",
+      "name": "圣彼得",
+      "category": "Person",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "泉水",
+      "label": "泉水",
+      "name": "泉水",
+      "category": "Place",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "特洛伊",
+      "label": "特洛伊",
+      "name": "特洛伊",
+      "category": "Place",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "入口",
+      "label": "入口",
+      "name": "入口",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "马可",
+      "label": "马可",
+      "name": "马可",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "阶梯",
+      "label": "阶梯",
+      "name": "阶梯",
+      "category": "Other",
+      "degree": 0,
       "image": null
     },
     {
@@ -1031,26 +1073,26 @@
       }
     },
     {
-      "id": "泉水",
-      "label": "泉水",
-      "name": "泉水",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "佛罗伦萨人",
-      "label": "佛罗伦萨人",
-      "name": "佛罗伦萨人",
-      "category": "Place",
+      "id": "圭多",
+      "label": "圭多",
+      "name": "圭多",
+      "category": "Event",
       "degree": 1,
       "image": null
     },
     {
-      "id": "入口",
-      "label": "入口",
-      "name": "入口",
+      "id": "基督教徒",
+      "label": "基督教徒",
+      "name": "基督教徒",
       "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "怪物",
+      "label": "怪物",
+      "name": "怪物",
+      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -1063,26 +1105,10 @@
       "image": null
     },
     {
-      "id": "暴力",
-      "label": "暴力",
-      "name": "暴力",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "森林",
       "label": "森林",
       "name": "森林",
       "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "欺诈",
-      "label": "欺诈",
-      "name": "欺诈",
-      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -1095,19 +1121,51 @@
       "image": null
     },
     {
-      "id": "马可",
-      "label": "马可",
-      "name": "马可",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "卢卡",
       "label": "卢卡",
       "name": "卢卡",
       "category": "Document",
       "degree": 0,
+      "image": null
+    },
+    {
+      "id": "洗礼",
+      "label": "洗礼",
+      "name": "洗礼",
+      "category": "Concept",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "荷马",
+      "label": "荷马",
+      "name": "荷马",
+      "category": "Person",
+      "degree": 4,
+      "image": null
+    },
+    {
+      "id": "城墙",
+      "label": "城墙",
+      "name": "城墙",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "欺诈",
+      "label": "欺诈",
+      "name": "欺诈",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "平原",
+      "label": "平原",
+      "name": "平原",
+      "category": "Person",
+      "degree": 20,
       "image": null
     },
     {
@@ -1129,10 +1187,42 @@
       }
     },
     {
-      "id": "城墙",
-      "label": "城墙",
-      "name": "城墙",
+      "id": "犹太人",
+      "label": "犹太人",
+      "name": "犹太人",
+      "category": "Other",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "僧侣",
+      "label": "僧侣",
+      "name": "僧侣",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "女王",
+      "label": "女王",
+      "name": "女王",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "暴力",
+      "label": "暴力",
+      "name": "暴力",
       "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "树林",
+      "label": "树林",
+      "name": "树林",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -1141,6 +1231,14 @@
       "label": "犹大",
       "name": "犹大",
       "category": "Document",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "神灵",
+      "label": "神灵",
+      "name": "神灵",
+      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -1158,14 +1256,6 @@
       "name": "阿尔诺河",
       "category": "Place",
       "degree": 1,
-      "image": null
-    },
-    {
-      "id": "平原",
-      "label": "平原",
-      "name": "平原",
-      "category": "Person",
-      "degree": 20,
       "image": null
     },
     {
@@ -1195,14 +1285,6 @@
       }
     },
     {
-      "id": "僧侣",
-      "label": "僧侣",
-      "name": "僧侣",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "君士坦丁",
       "label": "君士坦丁",
       "name": "君士坦丁",
@@ -1211,26 +1293,18 @@
       "image": null
     },
     {
-      "id": "基督教徒",
-      "label": "基督教徒",
-      "name": "基督教徒",
+      "id": "市民",
+      "label": "市民",
+      "name": "市民",
       "category": "Other",
       "degree": 1,
       "image": null
     },
     {
-      "id": "女王",
-      "label": "女王",
-      "name": "女王",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "怪物",
-      "label": "怪物",
-      "name": "怪物",
-      "category": "Place",
+      "id": "忒拜",
+      "label": "忒拜",
+      "name": "忒拜",
+      "category": "Document",
       "degree": 1,
       "image": null
     },
@@ -1238,14 +1312,6 @@
       "id": "托勒密",
       "label": "托勒密",
       "name": "托勒密",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "树林",
-      "label": "树林",
-      "name": "树林",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -1259,35 +1325,11 @@
       "image": null
     },
     {
-      "id": "神庙",
-      "label": "神庙",
-      "name": "神庙",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "神灵",
-      "label": "神灵",
-      "name": "神灵",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "阿尔卑斯山",
       "label": "阿尔卑斯山",
       "name": "阿尔卑斯山",
       "category": "Place",
       "degree": 1,
-      "image": null
-    },
-    {
-      "id": "洗礼",
-      "label": "洗礼",
-      "name": "洗礼",
-      "category": "Concept",
-      "degree": 0,
       "image": null
     },
     {
@@ -1335,25 +1377,41 @@
       }
     },
     {
-      "id": "犹太人",
-      "label": "犹太人",
-      "name": "犹太人",
-      "category": "Other",
+      "id": "以色列人",
+      "label": "以色列人",
+      "name": "以色列人",
+      "category": "Document",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "大门",
+      "label": "大门",
+      "name": "大门",
+      "category": "Place",
       "degree": 2,
+      "image": null
+    },
+    {
+      "id": "小船",
+      "label": "小船",
+      "name": "小船",
+      "category": "Place",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "以赛亚",
+      "label": "以赛亚",
+      "name": "以赛亚",
+      "category": "Other",
+      "degree": 1,
       "image": null
     },
     {
       "id": "岸边",
       "label": "岸边",
       "name": "岸边",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "市民",
-      "label": "市民",
-      "name": "市民",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -1367,18 +1425,34 @@
       "image": null
     },
     {
-      "id": "忒拜",
-      "label": "忒拜",
-      "name": "忒拜",
-      "category": "Document",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "普罗旺斯",
       "label": "普罗旺斯",
       "name": "普罗旺斯",
       "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "比萨",
+      "label": "比萨",
+      "name": "比萨",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "神庙",
+      "label": "神庙",
+      "name": "神庙",
+      "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "贫穷",
+      "label": "贫穷",
+      "name": "贫穷",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -1421,18 +1495,36 @@
       }
     },
     {
-      "id": "以色列人",
-      "label": "以色列人",
-      "name": "以色列人",
-      "category": "Document",
+      "id": "忘川",
+      "label": "忘川",
+      "name": "忘川",
+      "category": "Place",
+      "degree": 3,
+      "image": {
+        "id": "core-graph-忘川",
+        "src": "/media/graph-core/忘川.jpg",
+        "title": "忘川配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "忘川.jpg"
+      }
+    },
+    {
+      "id": "老人",
+      "label": "老人",
+      "name": "老人",
+      "category": "Person",
       "degree": 3,
       "image": null
     },
     {
-      "id": "小船",
-      "label": "小船",
-      "name": "小船",
-      "category": "Place",
+      "id": "摩西",
+      "label": "摩西",
+      "name": "摩西",
+      "category": "Document",
       "degree": 2,
       "image": null
     },
@@ -1445,6 +1537,14 @@
       "image": null
     },
     {
+      "id": "奥古斯都",
+      "label": "奥古斯都",
+      "name": "奥古斯都",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "梯子",
       "label": "梯子",
       "name": "梯子",
@@ -1453,18 +1553,18 @@
       "image": null
     },
     {
-      "id": "第一圈",
-      "label": "第一圈",
-      "name": "第一圈",
-      "category": "Place",
+      "id": "福音书",
+      "label": "福音书",
+      "name": "福音书",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
     {
-      "id": "贫穷",
-      "label": "贫穷",
-      "name": "贫穷",
-      "category": "Other",
+      "id": "第一圈",
+      "label": "第一圈",
+      "name": "第一圈",
+      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -1497,6 +1597,24 @@
       }
     },
     {
+      "id": "Arno",
+      "label": "Arno",
+      "name": "Arno",
+      "category": "Place",
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Arno",
+        "src": "/media/graph-core/arno.jpg",
+        "title": "阿诺河流域配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "arno.jpg"
+      }
+    },
+    {
       "id": "阿喀琉斯",
       "label": "阿喀琉斯",
       "name": "阿喀琉斯",
@@ -1505,45 +1623,19 @@
       "image": null
     },
     {
-      "id": "荷马",
-      "label": "荷马",
-      "name": "荷马",
+      "id": "Eagle",
+      "label": "Eagle",
+      "name": "Eagle",
+      "category": "Concept",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "亚当和夏娃",
+      "label": "亚当和夏娃",
+      "name": "亚当和夏娃",
       "category": "Person",
-      "degree": 4,
-      "image": null
-    },
-    {
-      "id": "忘川",
-      "label": "忘川",
-      "name": "忘川",
-      "category": "Place",
-      "degree": 3,
-      "image": {
-        "id": "core-graph-忘川",
-        "src": "/media/graph-core/忘川.jpg",
-        "title": "忘川配图",
-        "credit": "Wikimedia Commons / Wikipedia",
-        "usage": [
-          "graph",
-          "entity"
-        ],
-        "source": "忘川.jpg"
-      }
-    },
-    {
-      "id": "大门",
-      "label": "大门",
-      "name": "大门",
-      "category": "Place",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "摩西",
-      "label": "摩西",
-      "name": "摩西",
-      "category": "Document",
-      "degree": 2,
+      "degree": 1,
       "image": null
     },
     {
@@ -1579,6 +1671,14 @@
       "image": null
     },
     {
+      "id": "圣徒们",
+      "label": "圣徒们",
+      "name": "圣徒们",
+      "category": "Other",
+      "degree": 0,
+      "image": null
+    },
+    {
       "id": "战车",
       "label": "战车",
       "name": "战车",
@@ -1597,6 +1697,22 @@
       }
     },
     {
+      "id": "Jove",
+      "label": "Jove",
+      "name": "Jove",
+      "category": "Place",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "圣教会",
+      "label": "圣教会",
+      "name": "圣教会",
+      "category": "Other",
+      "degree": 2,
+      "image": null
+    },
+    {
       "id": "小溪",
       "label": "小溪",
       "name": "小溪",
@@ -1613,25 +1729,33 @@
       "image": null
     },
     {
-      "id": "亚当和夏娃",
-      "label": "亚当和夏娃",
-      "name": "亚当和夏娃",
-      "category": "Person",
+      "id": "冲突",
+      "label": "冲突",
+      "name": "冲突",
+      "category": "Event",
       "degree": 1,
       "image": null
     },
     {
-      "id": "奥古斯都",
-      "label": "奥古斯都",
-      "name": "奥古斯都",
-      "category": "Concept",
+      "id": "塔楼",
+      "label": "塔楼",
+      "name": "塔楼",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
     {
-      "id": "比萨",
-      "label": "比萨",
-      "name": "比萨",
+      "id": "巨人",
+      "label": "巨人",
+      "name": "巨人",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "特洛伊人",
+      "label": "特洛伊人",
+      "name": "特洛伊人",
       "category": "Place",
       "degree": 1,
       "image": null
@@ -1645,11 +1769,11 @@
       "image": null
     },
     {
-      "id": "圣徒们",
-      "label": "圣徒们",
-      "name": "圣徒们",
+      "id": "长老",
+      "label": "长老",
+      "name": "长老",
       "category": "Other",
-      "degree": 0,
+      "degree": 1,
       "image": null
     },
     {
@@ -1671,6 +1795,14 @@
       }
     },
     {
+      "id": "尼诺",
+      "label": "尼诺",
+      "name": "尼诺",
+      "category": "Person",
+      "degree": 3,
+      "image": null
+    },
+    {
       "id": "波河",
       "label": "波河",
       "name": "波河",
@@ -1679,18 +1811,10 @@
       "image": null
     },
     {
-      "id": "老人",
-      "label": "老人",
-      "name": "老人",
+      "id": "圣人",
+      "label": "圣人",
+      "name": "圣人",
       "category": "Person",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "圣教会",
-      "label": "圣教会",
-      "name": "圣教会",
-      "category": "Other",
       "degree": 2,
       "image": null
     },
@@ -1703,34 +1827,10 @@
       "image": null
     },
     {
-      "id": "以赛亚",
-      "label": "以赛亚",
-      "name": "以赛亚",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "伦巴第人",
-      "label": "伦巴第人",
-      "name": "伦巴第人",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "卡托",
       "label": "卡托",
       "name": "卡托",
       "category": "Document",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "塔楼",
-      "label": "塔楼",
-      "name": "塔楼",
-      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -1747,14 +1847,6 @@
       "label": "山羊",
       "name": "山羊",
       "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "巨人",
-      "label": "巨人",
-      "name": "巨人",
-      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -1783,26 +1875,18 @@
       "image": null
     },
     {
-      "id": "特洛伊人",
-      "label": "特洛伊人",
-      "name": "特洛伊人",
+      "id": "第四层",
+      "label": "第四层",
+      "name": "第四层",
       "category": "Place",
       "degree": 1,
       "image": null
     },
     {
-      "id": "福音书",
-      "label": "福音书",
-      "name": "福音书",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "长老",
-      "label": "长老",
-      "name": "长老",
-      "category": "Other",
+      "id": "花冠",
+      "label": "花冠",
+      "name": "花冠",
+      "category": "Person",
       "degree": 1,
       "image": null
     },
@@ -1815,29 +1899,29 @@
       "image": null
     },
     {
-      "id": "concept-love",
-      "label": "爱",
-      "name": "爱",
-      "category": "Concept",
-      "degree": 6,
+      "id": "罗马涅",
+      "label": "罗马涅",
+      "name": "罗马涅",
+      "category": "Place",
+      "degree": 10,
       "image": {
-        "id": "core-graph-concept-love",
-        "src": "/media/graph-core/concept-love.jpg",
-        "title": "爱配图",
+        "id": "core-graph-罗马涅",
+        "src": "/media/graph-core/罗马涅.jpg",
+        "title": "罗马涅配图",
         "credit": "Wikimedia Commons / Wikipedia",
         "usage": [
           "graph",
           "entity"
         ],
-        "source": "concept-love.jpg"
+        "source": "罗马涅.jpg"
       }
     },
     {
-      "id": "尼诺",
-      "label": "尼诺",
-      "name": "尼诺",
+      "id": "Achilles",
+      "label": "Achilles",
+      "name": "Achilles",
       "category": "Person",
-      "degree": 3,
+      "degree": 4,
       "image": null
     },
     {
@@ -1865,10 +1949,18 @@
       "image": null
     },
     {
-      "id": "冲突",
-      "label": "冲突",
-      "name": "冲突",
-      "category": "Event",
+      "id": "亚历山大",
+      "label": "亚历山大",
+      "name": "亚历山大",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "伦巴第人",
+      "label": "伦巴第人",
+      "name": "伦巴第人",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -1889,36 +1981,22 @@
       "image": null
     },
     {
-      "id": "热那亚",
-      "label": "热那亚",
-      "name": "热那亚",
+      "id": "Adamo",
+      "label": "Adamo",
+      "name": "Adamo",
       "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "玛尔斯",
-      "label": "玛尔斯",
-      "name": "玛尔斯",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "第四层",
-      "label": "第四层",
-      "name": "第四层",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "花冠",
-      "label": "花冠",
-      "name": "花冠",
-      "category": "Person",
-      "degree": 1,
-      "image": null
+      "degree": 6,
+      "image": {
+        "id": "core-graph-Adamo",
+        "src": "/media/graph-core/adamo.jpg",
+        "title": "阿达莫配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "adamo.jpg"
+      }
     },
     {
       "id": "大理石",
@@ -1947,12 +2025,22 @@
       "image": null
     },
     {
-      "id": "锡耶纳人",
-      "label": "锡耶纳人",
-      "name": "锡耶纳人",
-      "category": "Other",
-      "degree": 5,
-      "image": null
+      "id": "Cocytus",
+      "label": "Cocytus",
+      "name": "Cocytus",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Cocytus",
+        "src": "/media/graph-core/cocytus.jpg",
+        "title": "科库托斯配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "cocytus.jpg"
+      }
     },
     {
       "id": "罪犯",
@@ -1973,10 +2061,10 @@
       }
     },
     {
-      "id": "圣人",
-      "label": "圣人",
-      "name": "圣人",
-      "category": "Person",
+      "id": "台伯河",
+      "label": "台伯河",
+      "name": "台伯河",
+      "category": "Place",
       "degree": 2,
       "image": null
     },
@@ -2021,14 +2109,6 @@
       "image": null
     },
     {
-      "id": "亚历山大",
-      "label": "亚历山大",
-      "name": "亚历山大",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "卡恰",
       "label": "卡恰",
       "name": "卡恰",
@@ -2041,6 +2121,22 @@
       "label": "基督的新娘",
       "name": "基督的新娘",
       "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "宫殿",
+      "label": "宫殿",
+      "name": "宫殿",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "寡妇",
+      "label": "寡妇",
+      "name": "寡妇",
+      "category": "Person",
       "degree": 1,
       "image": null
     },
@@ -2065,6 +2161,22 @@
       "label": "海伦",
       "name": "海伦",
       "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "热那亚",
+      "label": "热那亚",
+      "name": "热那亚",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "黄道带",
+      "label": "黄道带",
+      "name": "黄道带",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -2095,22 +2207,12 @@
       }
     },
     {
-      "id": "罗马涅",
-      "label": "罗马涅",
-      "name": "罗马涅",
-      "category": "Place",
-      "degree": 10,
-      "image": {
-        "id": "core-graph-罗马涅",
-        "src": "/media/graph-core/罗马涅.jpg",
-        "title": "罗马涅配图",
-        "credit": "Wikimedia Commons / Wikipedia",
-        "usage": [
-          "graph",
-          "entity"
-        ],
-        "source": "罗马涅.jpg"
-      }
+      "id": "锡耶纳人",
+      "label": "锡耶纳人",
+      "name": "锡耶纳人",
+      "category": "Other",
+      "degree": 5,
+      "image": null
     },
     {
       "id": "凯旋车",
@@ -2129,10 +2231,10 @@
       "image": null
     },
     {
-      "id": "台伯河",
-      "label": "台伯河",
-      "name": "台伯河",
-      "category": "Place",
+      "id": "受苦的灵魂",
+      "label": "受苦的灵魂",
+      "name": "受苦的灵魂",
+      "category": "Other",
       "degree": 2,
       "image": null
     },
@@ -2169,6 +2271,14 @@
       "image": null
     },
     {
+      "id": "Avarice",
+      "label": "Avarice",
+      "name": "Avarice",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "九位缪斯",
       "label": "九位缪斯",
       "name": "九位缪斯",
@@ -2185,18 +2295,18 @@
       "image": null
     },
     {
-      "id": "婚礼",
-      "label": "婚礼",
-      "name": "婚礼",
-      "category": "Other",
+      "id": "大卫王",
+      "label": "大卫王",
+      "name": "大卫王",
+      "category": "Person",
       "degree": 1,
       "image": null
     },
     {
-      "id": "寡妇",
-      "label": "寡妇",
-      "name": "寡妇",
-      "category": "Person",
+      "id": "婚礼",
+      "label": "婚礼",
+      "name": "婚礼",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -2249,18 +2359,18 @@
       "image": null
     },
     {
-      "id": "洗礼堂",
-      "label": "洗礼堂",
-      "name": "洗礼堂",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "猎鹰",
       "label": "猎鹰",
       "name": "猎鹰",
       "category": "Document",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "玛尔斯",
+      "label": "玛尔斯",
+      "name": "玛尔斯",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -2273,10 +2383,26 @@
       "image": null
     },
     {
+      "id": "米拉",
+      "label": "米拉",
+      "name": "米拉",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "维罗纳",
       "label": "维罗纳",
       "name": "维罗纳",
       "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "老鹰",
+      "label": "老鹰",
+      "name": "老鹰",
+      "category": "Person",
       "degree": 1,
       "image": null
     },
@@ -2297,18 +2423,26 @@
       "image": null
     },
     {
-      "id": "黄道带",
-      "label": "黄道带",
-      "name": "黄道带",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "恒河",
       "label": "恒河",
       "name": "恒河",
       "category": "Place",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "珍珠",
+      "label": "珍珠",
+      "name": "珍珠",
+      "category": "Person",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "阿克",
+      "label": "阿克",
+      "name": "阿克",
+      "category": "Other",
       "degree": 0,
       "image": null
     },
@@ -2393,10 +2527,34 @@
       "image": null
     },
     {
-      "id": "受苦的灵魂",
-      "label": "受苦的灵魂",
-      "name": "受苦的灵魂",
-      "category": "Other",
+      "id": "Orlando",
+      "label": "Orlando",
+      "name": "Orlando",
+      "category": "Organization",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "Seraphim",
+      "label": "Seraphim",
+      "name": "Seraphim",
+      "category": "Period",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "山岭",
+      "label": "山岭",
+      "name": "山岭",
+      "category": "Place",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "扫罗",
+      "label": "扫罗",
+      "name": "扫罗",
+      "category": "Place",
       "degree": 2,
       "image": null
     },
@@ -2433,6 +2591,14 @@
       "image": null
     },
     {
+      "id": "三女神",
+      "label": "三女神",
+      "name": "三女神",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "两个灵魂",
       "label": "两个灵魂",
       "name": "两个灵魂",
@@ -2465,22 +2631,6 @@
       "image": null
     },
     {
-      "id": "大卫王",
-      "label": "大卫王",
-      "name": "大卫王",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "宫殿",
-      "label": "宫殿",
-      "name": "宫殿",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "恶言",
       "label": "恶言",
       "name": "恶言",
@@ -2497,18 +2647,26 @@
       "image": null
     },
     {
-      "id": "瑞亚",
-      "label": "瑞亚",
-      "name": "瑞亚",
-      "category": "Place",
+      "id": "梵蒂冈",
+      "label": "梵蒂冈",
+      "name": "梵蒂冈",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
     {
-      "id": "米拉",
-      "label": "米拉",
-      "name": "米拉",
+      "id": "洗礼堂",
+      "label": "洗礼堂",
+      "name": "洗礼堂",
       "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "瑞亚",
+      "label": "瑞亚",
+      "name": "瑞亚",
+      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -2529,10 +2687,10 @@
       "image": null
     },
     {
-      "id": "老鹰",
-      "label": "老鹰",
-      "name": "老鹰",
-      "category": "Person",
+      "id": "艺术家",
+      "label": "艺术家",
+      "name": "艺术家",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -2541,6 +2699,14 @@
       "label": "西庇阿",
       "name": "西庇阿",
       "category": "Period",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "西班牙人",
+      "label": "西班牙人",
+      "name": "西班牙人",
+      "category": "Person",
       "degree": 1,
       "image": null
     },
@@ -2601,22 +2767,6 @@
       "image": null
     },
     {
-      "id": "珍珠",
-      "label": "珍珠",
-      "name": "珍珠",
-      "category": "Person",
-      "degree": 0,
-      "image": null
-    },
-    {
-      "id": "阿克",
-      "label": "阿克",
-      "name": "阿克",
-      "category": "Other",
-      "degree": 0,
-      "image": null
-    },
-    {
       "id": "featured:matelda",
       "label": "玛泰尔妲",
       "name": "玛泰尔妲",
@@ -2635,9 +2785,59 @@
       }
     },
     {
+      "id": "person-dionysius",
+      "label": "狄奥尼修斯",
+      "name": "狄奥尼修斯",
+      "category": "Person",
+      "degree": 11,
+      "image": null
+    },
+    {
+      "id": "Manfredi",
+      "label": "Manfredi",
+      "name": "Manfredi",
+      "category": "Other",
+      "degree": 6,
+      "image": null
+    },
+    {
+      "id": "Acheron",
+      "label": "Acheron",
+      "name": "Acheron",
+      "category": "Place",
+      "degree": 4,
+      "image": {
+        "id": "core-graph-Acheron",
+        "src": "/media/graph-core/acheron.jpg",
+        "title": "阿刻戎河配图",
+        "credit": "Wikimedia Commons / Wikipedia",
+        "usage": [
+          "graph",
+          "entity"
+        ],
+        "source": "acheron.jpg"
+      }
+    },
+    {
       "id": "Gaeta",
       "label": "Gaeta",
       "name": "Gaeta",
+      "category": "Place",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "伯纳德",
+      "label": "伯纳德",
+      "name": "伯纳德",
+      "category": "Document",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "埃布罗河",
+      "label": "埃布罗河",
+      "name": "埃布罗河",
       "category": "Place",
       "degree": 3,
       "image": null
@@ -2675,18 +2875,18 @@
       "image": null
     },
     {
-      "id": "妓女",
-      "label": "妓女",
-      "name": "妓女",
-      "category": "Other",
+      "id": "Navarre",
+      "label": "Navarre",
+      "name": "Navarre",
+      "category": "Concept",
       "degree": 2,
       "image": null
     },
     {
-      "id": "山岭",
-      "label": "山岭",
-      "name": "山岭",
-      "category": "Place",
+      "id": "妓女",
+      "label": "妓女",
+      "name": "妓女",
+      "category": "Other",
       "degree": 2,
       "image": null
     },
@@ -2699,26 +2899,10 @@
       "image": null
     },
     {
-      "id": "异端者",
-      "label": "异端者",
-      "name": "异端者",
-      "category": "Concept",
-      "degree": 2,
-      "image": null
-    },
-    {
       "id": "引导者",
       "label": "引导者",
       "name": "引导者",
       "category": "Person",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "扫罗",
-      "label": "扫罗",
-      "name": "扫罗",
-      "category": "Place",
       "degree": 2,
       "image": null
     },
@@ -2755,9 +2939,17 @@
       "image": null
     },
     {
-      "id": "三女神",
-      "label": "三女神",
-      "name": "三女神",
+      "id": "Jews",
+      "label": "Jews",
+      "name": "Jews",
+      "category": "Event",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "乔托",
+      "label": "乔托",
+      "name": "乔托",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -2771,10 +2963,34 @@
       "image": null
     },
     {
+      "id": "前任",
+      "label": "前任",
+      "name": "前任",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "加的斯",
+      "label": "加的斯",
+      "name": "加的斯",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "卡尔卡布里纳",
       "label": "卡尔卡布里纳",
       "name": "卡尔卡布里纳",
       "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "卡帕纽斯",
+      "label": "卡帕纽斯",
+      "name": "卡帕纽斯",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -2843,14 +3059,6 @@
       "image": null
     },
     {
-      "id": "梵蒂冈",
-      "label": "梵蒂冈",
-      "name": "梵蒂冈",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "比德",
       "label": "比德",
       "name": "比德",
@@ -2891,22 +3099,6 @@
       "image": null
     },
     {
-      "id": "艺术家",
-      "label": "艺术家",
-      "name": "艺术家",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "西班牙人",
-      "label": "西班牙人",
-      "name": "西班牙人",
-      "category": "Person",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "费拉拉",
       "label": "费拉拉",
       "name": "费拉拉",
@@ -2931,6 +3123,14 @@
       "image": null
     },
     {
+      "id": "阿拉克涅",
+      "label": "阿拉克涅",
+      "name": "阿拉克涅",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "克里特岛",
       "label": "克里特岛",
       "name": "克里特岛",
@@ -2943,6 +3143,14 @@
       "label": "印度人",
       "name": "印度人",
       "category": "Other",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "拉特兰",
+      "label": "拉特兰",
+      "name": "拉特兰",
+      "category": "Event",
       "degree": 0,
       "image": null
     },
@@ -2985,35 +3193,11 @@
       }
     },
     {
-      "id": "person-dionysius",
-      "label": "狄奥尼修斯",
-      "name": "狄奥尼修斯",
-      "category": "Person",
-      "degree": 11,
-      "image": null
-    },
-    {
       "id": "血河",
       "label": "血河",
       "name": "血河",
       "category": "Place",
       "degree": 8,
-      "image": null
-    },
-    {
-      "id": "Manfredi",
-      "label": "Manfredi",
-      "name": "Manfredi",
-      "category": "Other",
-      "degree": 6,
-      "image": null
-    },
-    {
-      "id": "Cocytus",
-      "label": "Cocytus",
-      "name": "Cocytus",
-      "category": "Place",
-      "degree": 4,
       "image": null
     },
     {
@@ -3025,6 +3209,22 @@
       "image": null
     },
     {
+      "id": "Alcmaeon",
+      "label": "Alcmaeon",
+      "name": "Alcmaeon",
+      "category": "Person",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Barbariccia",
+      "label": "Barbariccia",
+      "name": "Barbariccia",
+      "category": "Event",
+      "degree": 3,
+      "image": null
+    },
+    {
       "id": "Bari",
       "label": "Bari",
       "name": "Bari",
@@ -3033,10 +3233,34 @@
       "image": null
     },
     {
-      "id": "伯纳德",
-      "label": "伯纳德",
-      "name": "伯纳德",
+      "id": "Constance",
+      "label": "Constance",
+      "name": "Constance",
       "category": "Document",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Forese",
+      "label": "Forese",
+      "name": "Forese",
+      "category": "Person",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Rinieri",
+      "label": "Rinieri",
+      "name": "Rinieri",
+      "category": "Other",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Seville",
+      "label": "Seville",
+      "name": "Seville",
+      "category": "Place",
       "degree": 3,
       "image": null
     },
@@ -3049,35 +3273,11 @@
       "image": null
     },
     {
-      "id": "埃布罗河",
-      "label": "埃布罗河",
-      "name": "埃布罗河",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
       "id": "阿普利亚",
       "label": "阿普利亚",
       "name": "阿普利亚",
       "category": "Event",
       "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Orlando",
-      "label": "Orlando",
-      "name": "Orlando",
-      "category": "Organization",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "Seraphim",
-      "label": "Seraphim",
-      "name": "Seraphim",
-      "category": "Period",
-      "degree": 2,
       "image": null
     },
     {
@@ -3093,6 +3293,14 @@
       "label": "守门人",
       "name": "守门人",
       "category": "Person",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "异端者",
+      "label": "异端者",
+      "name": "异端者",
+      "category": "Concept",
       "degree": 2,
       "image": null
     },
@@ -3129,6 +3337,78 @@
       "image": null
     },
     {
+      "id": "Alichino",
+      "label": "Alichino",
+      "name": "Alichino",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Cagnazzo",
+      "label": "Cagnazzo",
+      "name": "Cagnazzo",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Cain",
+      "label": "Cain",
+      "name": "Cain",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Ciriatto",
+      "label": "Ciriatto",
+      "name": "Ciriatto",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Cytherea",
+      "label": "Cytherea",
+      "name": "Cytherea",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Draghinazzo",
+      "label": "Draghinazzo",
+      "name": "Draghinazzo",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Libicocco",
+      "label": "Libicocco",
+      "name": "Libicocco",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Peschiera",
+      "label": "Peschiera",
+      "name": "Peschiera",
+      "category": "Period",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Rubicant",
+      "label": "Rubicant",
+      "name": "Rubicant",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "Sinon",
       "label": "Sinon",
       "name": "Sinon",
@@ -3145,14 +3425,6 @@
       "image": null
     },
     {
-      "id": "乔托",
-      "label": "乔托",
-      "name": "乔托",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "亚拿尼亚",
       "label": "亚拿尼亚",
       "name": "亚拿尼亚",
@@ -3161,9 +3433,9 @@
       "image": null
     },
     {
-      "id": "伪造者",
-      "label": "伪造者",
-      "name": "伪造者",
+      "id": "亨利的灵魂",
+      "label": "亨利的灵魂",
+      "name": "亨利的灵魂",
       "category": "Place",
       "degree": 1,
       "image": null
@@ -3217,14 +3489,6 @@
       "image": null
     },
     {
-      "id": "前任",
-      "label": "前任",
-      "name": "前任",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "加利亚",
       "label": "加利亚",
       "name": "加利亚",
@@ -3241,14 +3505,6 @@
       "image": null
     },
     {
-      "id": "加的斯",
-      "label": "加的斯",
-      "name": "加的斯",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "占星",
       "label": "占星",
       "name": "占星",
@@ -3257,25 +3513,9 @@
       "image": null
     },
     {
-      "id": "卡帕纽斯",
-      "label": "卡帕纽斯",
-      "name": "卡帕纽斯",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "卢瓦尔河",
       "label": "卢瓦尔河",
       "name": "卢瓦尔河",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "圣像",
-      "label": "圣像",
-      "name": "圣像",
       "category": "Place",
       "degree": 1,
       "image": null
@@ -3388,6 +3628,14 @@
       "id": "朱巴",
       "label": "朱巴",
       "name": "朱巴",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "朱庇特的儿子",
+      "label": "朱庇特的儿子",
+      "name": "朱庇特的儿子",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -3569,14 +3817,6 @@
       "image": null
     },
     {
-      "id": "阿拉克涅",
-      "label": "阿拉克涅",
-      "name": "阿拉克涅",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "阿提拉",
       "label": "阿提拉",
       "name": "阿提拉",
@@ -3601,6 +3841,14 @@
       "image": null
     },
     {
+      "id": "Bolsena",
+      "label": "Bolsena",
+      "name": "Bolsena",
+      "category": "Concept",
+      "degree": 0,
+      "image": null
+    },
+    {
       "id": "圣泽诺",
       "label": "圣泽诺",
       "name": "圣泽诺",
@@ -3613,14 +3861,6 @@
       "label": "塞墨勒",
       "name": "塞墨勒",
       "category": "Other",
-      "degree": 0,
-      "image": null
-    },
-    {
-      "id": "拉特兰",
-      "label": "拉特兰",
-      "name": "拉特兰",
-      "category": "Event",
       "degree": 0,
       "image": null
     },
@@ -3839,43 +4079,11 @@
       "image": null
     },
     {
-      "id": "Adamo",
-      "label": "Adamo",
-      "name": "Adamo",
-      "category": "Place",
-      "degree": 6,
-      "image": null
-    },
-    {
-      "id": "Arno",
-      "label": "Arno",
-      "name": "Arno",
-      "category": "Place",
-      "degree": 6,
-      "image": null
-    },
-    {
       "id": "马克拉河",
       "label": "马克拉河",
       "name": "马克拉河",
       "category": "Place",
       "degree": 5,
-      "image": null
-    },
-    {
-      "id": "Acheron",
-      "label": "Acheron",
-      "name": "Acheron",
-      "category": "Place",
-      "degree": 4,
-      "image": null
-    },
-    {
-      "id": "Achilles",
-      "label": "Achilles",
-      "name": "Achilles",
-      "category": "Person",
-      "degree": 4,
       "image": null
     },
     {
@@ -3895,14 +4103,6 @@
       "image": null
     },
     {
-      "id": "Alcmaeon",
-      "label": "Alcmaeon",
-      "name": "Alcmaeon",
-      "category": "Person",
-      "degree": 3,
-      "image": null
-    },
-    {
       "id": "Antaeus",
       "label": "Antaeus",
       "name": "Antaeus",
@@ -3911,10 +4111,10 @@
       "image": null
     },
     {
-      "id": "Barbariccia",
-      "label": "Barbariccia",
-      "name": "Barbariccia",
-      "category": "Event",
+      "id": "Branca Doria",
+      "label": "Branca Doria",
+      "name": "Branca Doria",
+      "category": "Place",
       "degree": 3,
       "image": null
     },
@@ -3927,18 +4127,34 @@
       "image": null
     },
     {
-      "id": "Forese",
-      "label": "Forese",
-      "name": "Forese",
-      "category": "Person",
+      "id": "Croton",
+      "label": "Croton",
+      "name": "Croton",
+      "category": "Place",
       "degree": 3,
       "image": null
     },
     {
-      "id": "Rinieri",
-      "label": "Rinieri",
-      "name": "Rinieri",
+      "id": "Jovial Cresset",
+      "label": "Jovial Cresset",
+      "name": "Jovial Cresset",
+      "category": "Concept",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Lamentation",
+      "label": "Lamentation",
+      "name": "Lamentation",
       "category": "Other",
+      "degree": 3,
+      "image": null
+    },
+    {
+      "id": "Vanni Fucci",
+      "label": "Vanni Fucci",
+      "name": "Vanni Fucci",
+      "category": "Place",
       "degree": 3,
       "image": null
     },
@@ -3999,9 +4215,33 @@
       "image": null
     },
     {
-      "id": "Navarre",
-      "label": "Navarre",
-      "name": "Navarre",
+      "id": "Cupid",
+      "label": "Cupid",
+      "name": "Cupid",
+      "category": "Concept",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "Denying And Blaspheming His High Power",
+      "label": "Denying And Blaspheming His High Power",
+      "name": "Denying And Blaspheming His High Power",
+      "category": "Concept",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "Eurypilus",
+      "label": "Eurypilus",
+      "name": "Eurypilus",
+      "category": "Event",
+      "degree": 2,
+      "image": null
+    },
+    {
+      "id": "Graffiacan",
+      "label": "Graffiacan",
+      "name": "Graffiacan",
       "category": "Concept",
       "degree": 2,
       "image": null
@@ -4079,22 +4319,6 @@
       "image": null
     },
     {
-      "id": "Cagnazzo",
-      "label": "Cagnazzo",
-      "name": "Cagnazzo",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Cain",
-      "label": "Cain",
-      "name": "Cain",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Calchas",
       "label": "Calchas",
       "name": "Calchas",
@@ -4111,14 +4335,6 @@
       "image": null
     },
     {
-      "id": "Ciriatto",
-      "label": "Ciriatto",
-      "name": "Ciriatto",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Diligite Justitiam",
       "label": "Diligite Justitiam",
       "name": "Diligite Justitiam",
@@ -4127,10 +4343,58 @@
       "image": null
     },
     {
-      "id": "Peschiera",
-      "label": "Peschiera",
-      "name": "Peschiera",
-      "category": "Period",
+      "id": "Evil Garden",
+      "label": "Evil Garden",
+      "name": "Evil Garden",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Fire-Flies",
+      "label": "Fire-Flies",
+      "name": "Fire-Flies",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Hermaphrodite",
+      "label": "Hermaphrodite",
+      "name": "Hermaphrodite",
+      "category": "Artifact",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Javelin",
+      "label": "Javelin",
+      "name": "Javelin",
+      "category": "Artifact",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Mercy and Justice",
+      "label": "Mercy and Justice",
+      "name": "Mercy and Justice",
+      "category": "Concept",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Montaperto",
+      "label": "Montaperto",
+      "name": "Montaperto",
+      "category": "Event",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "Naiads",
+      "label": "Naiads",
+      "name": "Naiads",
+      "category": "Event",
       "degree": 1,
       "image": null
     },
@@ -4159,18 +4423,18 @@
       "image": null
     },
     {
-      "id": "乌吉家族",
-      "label": "乌吉家族",
-      "name": "乌吉家族",
-      "category": "Document",
+      "id": "Sicheus",
+      "label": "Sicheus",
+      "name": "Sicheus",
+      "category": "Concept",
       "degree": 1,
       "image": null
     },
     {
-      "id": "亨利的灵魂",
-      "label": "亨利的灵魂",
-      "name": "亨利的灵魂",
-      "category": "Place",
+      "id": "乌吉家族",
+      "label": "乌吉家族",
+      "name": "乌吉家族",
+      "category": "Document",
       "degree": 1,
       "image": null
     },
@@ -4231,6 +4495,14 @@
       "image": null
     },
     {
+      "id": "伪造者",
+      "label": "伪造者",
+      "name": "伪造者",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "但丁的向导",
       "label": "但丁的向导",
       "name": "但丁的向导",
@@ -4282,6 +4554,14 @@
       "id": "图皮诺河",
       "label": "图皮诺河",
       "name": "图皮诺河",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "圣像",
+      "label": "圣像",
+      "name": "圣像",
       "category": "Place",
       "degree": 1,
       "image": null
@@ -4399,10 +4679,26 @@
       "image": null
     },
     {
+      "id": "布鲁图斯",
+      "label": "布鲁图斯",
+      "name": "布鲁图斯",
+      "category": "Place",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "帕尔梅尼德斯",
       "label": "帕尔梅尼德斯",
       "name": "帕尔梅尼德斯",
       "category": "Person",
+      "degree": 1,
+      "image": null
+    },
+    {
+      "id": "弗朗科",
+      "label": "弗朗科",
+      "name": "弗朗科",
+      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -4455,6 +4751,14 @@
       "image": null
     },
     {
+      "id": "提西福涅",
+      "label": "提西福涅",
+      "name": "提西福涅",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "斯奇皮奥",
       "label": "斯奇皮奥",
       "name": "斯奇皮奥",
@@ -4487,10 +4791,10 @@
       "image": null
     },
     {
-      "id": "朱庇特的儿子",
-      "label": "朱庇特的儿子",
-      "name": "朱庇特的儿子",
-      "category": "Other",
+      "id": "格拉提安",
+      "label": "格拉提安",
+      "name": "格拉提安",
+      "category": "Place",
       "degree": 1,
       "image": null
     },
@@ -4743,6 +5047,14 @@
       "image": null
     },
     {
+      "id": "马耳他",
+      "label": "马耳他",
+      "name": "马耳他",
+      "category": "Other",
+      "degree": 1,
+      "image": null
+    },
+    {
       "id": "马雷马",
       "label": "马雷马",
       "name": "马雷马",
@@ -4759,14 +5071,6 @@
       "image": null
     },
     {
-      "id": "Bolsena",
-      "label": "Bolsena",
-      "name": "Bolsena",
-      "category": "Concept",
-      "degree": 0,
-      "image": null
-    },
-    {
       "id": "Jocasta",
       "label": "Jocasta",
       "name": "Jocasta",
@@ -4779,6 +5083,14 @@
       "label": "人性与神性的结合",
       "name": "人性与神性的结合",
       "category": "Document",
+      "degree": 0,
+      "image": null
+    },
+    {
+      "id": "佩内斯特里诺",
+      "label": "佩内斯特里诺",
+      "name": "佩内斯特里诺",
+      "category": "Other",
       "degree": 0,
       "image": null
     },
@@ -4967,14 +5279,6 @@
       "image": null
     },
     {
-      "id": "Branca Doria",
-      "label": "Branca Doria",
-      "name": "Branca Doria",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
       "id": "Canto_XIX",
       "label": "Canto_XIX",
       "name": "Canto_XIX",
@@ -4983,66 +5287,10 @@
       "image": null
     },
     {
-      "id": "Constance",
-      "label": "Constance",
-      "name": "Constance",
-      "category": "Document",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Croton",
-      "label": "Croton",
-      "name": "Croton",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Jove",
-      "label": "Jove",
-      "name": "Jove",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Jovial Cresset",
-      "label": "Jovial Cresset",
-      "name": "Jovial Cresset",
-      "category": "Concept",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Lamentation",
-      "label": "Lamentation",
-      "name": "Lamentation",
-      "category": "Other",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Seville",
-      "label": "Seville",
-      "name": "Seville",
-      "category": "Place",
-      "degree": 3,
-      "image": null
-    },
-    {
       "id": "The_Plant",
       "label": "The_Plant",
       "name": "The_Plant",
       "category": "Other",
-      "degree": 3,
-      "image": null
-    },
-    {
-      "id": "Vanni Fucci",
-      "label": "Vanni Fucci",
-      "name": "Vanni Fucci",
-      "category": "Place",
       "degree": 3,
       "image": null
     },
@@ -5143,49 +5391,9 @@
       "image": null
     },
     {
-      "id": "Cupid",
-      "label": "Cupid",
-      "name": "Cupid",
-      "category": "Concept",
-      "degree": 2,
-      "image": null
-    },
-    {
       "id": "Cyprian_deity",
       "label": "Cyprian_deity",
       "name": "Cyprian_deity",
-      "category": "Concept",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "Denying And Blaspheming His High Power",
-      "label": "Denying And Blaspheming His High Power",
-      "name": "Denying And Blaspheming His High Power",
-      "category": "Concept",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "Eagle",
-      "label": "Eagle",
-      "name": "Eagle",
-      "category": "Concept",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "Eurypilus",
-      "label": "Eurypilus",
-      "name": "Eurypilus",
-      "category": "Event",
-      "degree": 2,
-      "image": null
-    },
-    {
-      "id": "Graffiacan",
-      "label": "Graffiacan",
-      "name": "Graffiacan",
       "category": "Concept",
       "degree": 2,
       "image": null
@@ -5703,14 +5911,6 @@
       "image": null
     },
     {
-      "id": "Alichino",
-      "label": "Alichino",
-      "name": "Alichino",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Angel_of_God",
       "label": "Angel_of_God",
       "name": "Angel_of_God",
@@ -5723,14 +5923,6 @@
       "label": "Aquinum的伟大精神",
       "name": "Aquinum的伟大精神",
       "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Avarice",
-      "label": "Avarice",
-      "name": "Avarice",
-      "category": "Concept",
       "degree": 1,
       "image": null
     },
@@ -5767,25 +5959,9 @@
       "image": null
     },
     {
-      "id": "Cytherea",
-      "label": "Cytherea",
-      "name": "Cytherea",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Divine Goodness",
       "label": "Divine Goodness",
       "name": "Divine Goodness",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Draghinazzo",
-      "label": "Draghinazzo",
-      "name": "Draghinazzo",
       "category": "Concept",
       "degree": 1,
       "image": null
@@ -5799,26 +5975,10 @@
       "image": null
     },
     {
-      "id": "Evil Garden",
-      "label": "Evil Garden",
-      "name": "Evil Garden",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Fantolini家族",
       "label": "Fantolini家族",
       "name": "Fantolini家族",
       "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Fire-Flies",
-      "label": "Fire-Flies",
-      "name": "Fire-Flies",
-      "category": "Concept",
       "degree": 1,
       "image": null
     },
@@ -5839,14 +5999,6 @@
       "image": null
     },
     {
-      "id": "Hermaphrodite",
-      "label": "Hermaphrodite",
-      "name": "Hermaphrodite",
-      "category": "Artifact",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "I",
       "label": "I",
       "name": "I",
@@ -5863,22 +6015,6 @@
       "image": null
     },
     {
-      "id": "Javelin",
-      "label": "Javelin",
-      "name": "Javelin",
-      "category": "Artifact",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Jews",
-      "label": "Jews",
-      "name": "Jews",
-      "category": "Event",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Latona的女儿",
       "label": "Latona的女儿",
       "name": "Latona的女儿",
@@ -5887,26 +6023,10 @@
       "image": null
     },
     {
-      "id": "Libicocco",
-      "label": "Libicocco",
-      "name": "Libicocco",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Lybic_Sands",
       "label": "Lybic_Sands",
       "name": "Lybic_Sands",
       "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Mercy and Justice",
-      "label": "Mercy and Justice",
-      "name": "Mercy and Justice",
-      "category": "Concept",
       "degree": 1,
       "image": null
     },
@@ -5923,22 +6043,6 @@
       "label": "Mincius河",
       "name": "Mincius河",
       "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Montaperto",
-      "label": "Montaperto",
-      "name": "Montaperto",
-      "category": "Event",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Naiads",
-      "label": "Naiads",
-      "name": "Naiads",
-      "category": "Event",
       "degree": 1,
       "image": null
     },
@@ -5991,26 +6095,10 @@
       "image": null
     },
     {
-      "id": "Rubicant",
-      "label": "Rubicant",
-      "name": "Rubicant",
-      "category": "Concept",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "Seventh_Circle",
       "label": "Seventh_Circle",
       "name": "Seventh_Circle",
       "category": "Event",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "Sicheus",
-      "label": "Sicheus",
-      "name": "Sicheus",
-      "category": "Concept",
       "degree": 1,
       "image": null
     },
@@ -7031,14 +7119,6 @@
       "image": null
     },
     {
-      "id": "布鲁图斯",
-      "label": "布鲁图斯",
-      "name": "布鲁图斯",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "希奇",
       "label": "希奇",
       "name": "希奇",
@@ -7083,14 +7163,6 @@
       "label": "弗朗切斯科",
       "name": "弗朗切斯科",
       "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "弗朗科",
-      "label": "弗朗科",
-      "name": "弗朗科",
-      "category": "Other",
       "degree": 1,
       "image": null
     },
@@ -7282,14 +7354,6 @@
       "id": "提瑞西阿斯",
       "label": "提瑞西阿斯",
       "name": "提瑞西阿斯",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "提西福涅",
-      "label": "提西福涅",
-      "name": "提西福涅",
       "category": "Other",
       "degree": 1,
       "image": null
@@ -7490,14 +7554,6 @@
       "id": "格拉夫拉卡内",
       "label": "格拉夫拉卡内",
       "name": "格拉夫拉卡内",
-      "category": "Place",
-      "degree": 1,
-      "image": null
-    },
-    {
-      "id": "格拉提安",
-      "label": "格拉提安",
-      "name": "格拉提安",
       "category": "Place",
       "degree": 1,
       "image": null
@@ -8551,14 +8607,6 @@
       "image": null
     },
     {
-      "id": "马耳他",
-      "label": "马耳他",
-      "name": "马耳他",
-      "category": "Other",
-      "degree": 1,
-      "image": null
-    },
-    {
       "id": "骑士们",
       "label": "骑士们",
       "name": "骑士们",
@@ -8667,14 +8715,6 @@
       "label": "伪善者的学院",
       "name": "伪善者的学院",
       "category": "Person",
-      "degree": 0,
-      "image": null
-    },
-    {
-      "id": "佩内斯特里诺",
-      "label": "佩内斯特里诺",
-      "name": "佩内斯特里诺",
-      "category": "Other",
       "degree": 0,
       "image": null
     },
