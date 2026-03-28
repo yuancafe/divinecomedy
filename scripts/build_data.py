@@ -2647,6 +2647,13 @@ def build_database(
 
 def main() -> None:
     ensure_dirs()
+    required_sources = [Path(work["source"]) for work in WORKS] + [COMPARISON_MD_PATH, GRAPH_DATA_PATH, ENTITY_DETAILS_PATH]
+    if not all(path.exists() for path in required_sources):
+        print("Source books or reference assets are unavailable; reusing committed generated data.")
+        if not any((PUBLIC_DATA_DIR / name).exists() for name in ["reader-cantos.json", "entity-catalog.json", "graph-core.json"]):
+            raise FileNotFoundError("Committed generated data is missing; cannot build in fallback mode.")
+        return
+
     clear_generated_json()
 
     work_lines = {
